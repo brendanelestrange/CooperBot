@@ -39,3 +39,4 @@ kenpom_df = pd.DataFrame({
 os.makedirs("results", exist_ok=True)
 
 kenpom_df.to_csv('results/kenpom.csv', index=False)
+print("saved to kenpom.csv")

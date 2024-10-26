@@ -33,3 +33,4 @@ ncaa_df = pd.DataFrame(ncaa_data, columns=["Team", "NCAA Rank", "Road", "Neutral
 
 os.makedirs("results", exist_ok=True)
 ncaa_df.to_csv('results/ncaa.csv', index=False)
+print("saved to ncaa.csv")

@@ -1,9 +1,9 @@
-Rank,Team,Rating
-1,Connecticut,93.12
-2,Alabama,92.11
+Sagarin Rank,Team,Sagarin Rating
+1,UConn,93.12
+2,Ala.,92.11
 3,UCLA,91.23
 4,Houston,91.11
-5,Texas,90.42
+5,TX,90.42
 6,Kansas,89.9
 7,Gonzaga,89.55
 8,Arizona,89.13
@@ -13,67 +13,67 @@ Rank,Team,Rating
 12,Marquette,87.45
 13,Duke,87.4
 14,Baylor,87.22
-15,San Diego State,86.48
-16,Saint Mary's-Cal.,86.41
+15,San Diego St.,86.48
+16,St. Mary's-Cal.,86.41
 17,Memphis,86.3
 18,Miami-Florida,86.27
 19,Xavier-Ohio,86.14
 20,Arkansas,85.88
 21,Kentucky,85.85
-22,Michigan State,85.84
+22,Michigan St.,85.84
 23,Indiana,85.84
 24,TCU,85.84
-25,Kansas State,85.78
+25,Kansas St.,85.78
 26,West Virginia,85.63
-27,Texas A&M,85.35
+27,TX A&M,85.35
 28,Auburn,85.15
 29,MEAC,63.63
 29,Maryland,84.99
 30,Illinois,84.78
-31,Florida Atlantic,84.74
+31,Fla. Atlantic,84.74
 32,Virginia,84.68
-33,Penn State,84.56
+33,Penn St.,84.56
 34,Iowa,84.48
 35,Michigan,84.46
 36,Northwestern,84.44
-37,North Carolina,84.26
-38,Iowa State,83.94
+37,North Car.,84.26
+38,Iowa St.,83.94
 39,Providence,83.86
-40,Southern California,83.67
+40,S. California,83.67
 41,Oregon,83.66
 42,Rutgers,83.62
-43,Texas Tech,83.51
-44,Utah State,83.35
+43,TX Tech,83.51
+44,Utah St.,83.35
 45,Cincinnati,83.35
-46,Ohio State,83.18
-47,North Texas,83.1
+46,Ohio St.,83.18
+47,North TX,83.1
 48,Villanova,83.02
-49,NC State,82.98
-50,VCU(Va. Commonwealth),82.97
-51,Oklahoma State,82.72
+49,NC St.,82.98
+50,VCU,82.97
+51,Oklahoma St.,82.72
 52,Wisconsin,82.67
 53,UAB,82.65
 54,Missouri,82.24
-55,Mississippi State,82.16
+55,Miss. St.,82.16
 56,Pittsburgh,82.04
 57,Arizona State,82.0
 58,Oklahoma,81.99
 59,Clemson,81.92
 60,Seton Hall,81.67
 61,Drake,81.64
-62,Boise State,81.52
+62,Boise St.,81.52
 63,Vanderbilt,81.03
-64,Central Florida(UCF),80.98
+64,C. Fla.,80.98
 65,Dayton,80.89
-66,BYU,80.85
-67,Kent State,80.72
+66,Brigham Young,80.85
+67,Kent St.,80.72
 68,St. John's,80.62
-69,College of Charleston,80.59
+69,of Charleston,80.59
 70,Florida,80.58
 71,Stanford,80.57
 72,Virginia Tech,80.47
 73,Colorado,80.24
-74,Washington State,80.22
+74,Washington St.,80.22
 75,Toledo,80.09
 76,Yale,80.04
 77,Utah Valley,79.95
@@ -83,7 +83,7 @@ Rank,Team,Rating
 81,Utah,79.32
 82,Furman,79.18
 83,Iona,79.14
-84,Saint Louis,78.89
+84,St. Louis,78.89
 85,Hofstra,78.88
 86,Bradley,78.85
 87,Santa Clara,78.69
@@ -93,24 +93,24 @@ Rank,Team,Rating
 91,Princeton,78.18
 92,Louisiana,78.06
 93,Syracuse,77.97
-94,Wichita State,77.88
+94,Wichita St.,77.88
 95,San Francisco,77.85
 96,Marshall,77.79
-97,Sam Houston State,77.67
-98,Indiana State,77.51
+97,Sam Houston St.,77.67
+98,Indiana St.,77.51
 99,Akron,77.28
 100,Washington,77.19
 101,Tulane,77.17
-102,Mississippi,77.17
+102,Miss.,77.17
 103,Temple,76.89
 104,UNLV,76.76
 105,Belmont,76.66
 106,Vermont,76.56
-107,South Alabama,76.33
+107,South Ala.,76.33
 108,Grand Canyon,76.32
 109,Butler,76.12
 110,UC Santa Barbara,76.09
-111,Colorado State,76.02
+111,Colorado St.,76.02
 112,Colgate,75.98
 113,Davidson,75.97
 114,NC Greensboro,75.81
@@ -118,71 +118,71 @@ Rank,Team,Rating
 116,Ohio,75.62
 117,Loyola Marymount,75.61
 118,James Madison,75.59
-119,San Jose State,75.56
-120,Georgia Tech,75.4
+119,San Jose St.,75.56
+120,Ga. Tech,75.4
 121,Notre Dame,75.28
 122,Fordham,75.21
 123,UC Irvine,75.09
 124,DePaul,75.08
 125,Middle Tennessee,75.03
 126,Towson,75.01
-127,LSU,75.0
+127,Louisiana State,75.0
 128,George Mason,74.94
 129,Pennsylvania,74.91
-130,Montana State,74.8
-131,Southern Illinois,74.8
-132,Boston College,74.71
+130,Montana St.,74.8
+131,S. Illinois,74.8
+132,Boston,74.71
 133,UMass Lowell,74.44
 134,Samford,74.39
-135,Missouri State,74.37
-136,Eastern Washington,74.36
-137,Southern Miss,74.25
-138,Southern Utah,74.1
+135,Missouri St.,74.37
+136,E. Washington,74.36
+137,S. Miss,74.25
+138,S. Utah,74.1
 139,Duquesne,73.94
-140,Youngstown State,73.85
-141,Fresno State,73.8
-142,Kennesaw State,73.74
+140,Youngstown St.,73.85
+141,Fresno St.,73.8
+142,Kennesaw St.,73.74
 143,Richmond,73.63
-144,Hawai'i,73.45
-145,CS Fullerton,73.37
-146,Northern Kentucky,73.34
+144,Hawaii,73.45
+145,Cal State Fullerton,73.37
+146,N. Kentucky,73.34
 147,Stephen F. Austin,73.26
 148,Minnesota,73.25
-149,Florida State,73.24
+149,Fla. St.,73.24
 150,Troy,73.23
 151,UC Riverside,73.22
-152,South Florida,73.2
-153,Saint Joseph's-Pa.,73.02
+152,South Fla.,73.2
+153,St. Joseph's-Pa.,73.02
 154,NC Wilmington,72.97
-155,Georgia,72.91
+155,Ga.,72.91
 156,Ball State,72.78
 157,SMU,72.74
-158,East Carolina,72.62
+158,East Car.,72.62
 159,Old Dominion,72.57
-160,South Carolina,72.49
+160,South Car.,72.49
 161,NC Asheville,72.45
-162,Western Kentucky,72.35
-163,Eastern Kentucky,72.33
+162,W. Kentucky,72.35
+163,E. Kentucky,72.33
 164,Chattanooga,72.3
 165,Seattle,72.27
-166,South Dakota State,72.25
+166,South Dakota St.,72.25
 167,Louisiana Tech,72.25
 168,Portland,72.23
 169,Harvard,72.23
 170,Cornell,72.2
 171,Wyoming,72.15
 172,St. Bonaventure,72.09
-173,New Mexico State,71.73
-174,Oregon State,71.6
+173,New Mexico St.,71.73
+174,Oregon St.,71.6
 175,Brown,71.55
 176,Georgetown,71.55
-177,Northern Iowa,71.53
+177,N. Iowa,71.53
 178,Lipscomb,71.52
-179,Wright State,71.46
+179,Wright St.,71.46
 180,Air Force,71.43
 181,California Baptist,71.34
 182,UTEP,71.22
-183,Long Beach State,71.21
+183,Long Beach St.,71.21
 184,Navy,71.2
 185,Massachusetts,71.1
 186,UC Davis,71.05
@@ -191,73 +191,73 @@ Rank,Team,Rating
 189,Radford,70.98
 190,George Washington,70.95
 191,Longwood,70.94
-192,Weber State,70.82
+192,Weber St.,70.82
 193,Buffalo,70.74
 194,Appalachian State,70.69
 195,La Salle,70.68
-196,Murray State,70.65
-197,Texas State,70.58
-198,Texas A&M-CorpusChristi,70.56
-199,Norfolk State,70.34
-200,Georgia Southern,70.3
+196,Murray St.,70.65
+197,TX St.,70.58
+198,TX A&M-CorpusChristi,70.56
+199,Norfolk St.,70.34
+200,Ga. S.,70.3
 201,Mercer,70.26
-202,Cleveland State,70.25
+202,Cleveland St.,70.25
 203,Wofford,70.18
 204,Utah Tech,70.09
-205,Tarleton State,70.06
+205,Tarleton St.,70.06
 206,Pepperdine,69.96
 207,Rice,69.94
 208,Pacific,69.93
 209,Rider,69.92
 210,Loyola-Chicago,69.9
 211,Detroit Mercy,69.88
-212,North Dakota State,69.72
-213,Fla. International,69.63
+212,North Dakota St.,69.72
+213,Florida International,69.63
 214,Abilene Christian,69.54
 215,Bryant,69.54
-216,Grambling State,69.51
-217,NC Central,69.5
+216,Grambling St.,69.51
+217,NC C.,69.5
 218,Quinnipiac,69.43
 219,St. Thomas-Mn.,69.26
-220,Morehead State,69.08
-221,Western Carolina,69.07
+220,Morehead St.,69.08
+221,W. Car.,69.07
 222,Louisville,68.96
 223,Siena,68.94
-224,Florida Gulf Coast,68.92
+224,Fla. Gulf Coast,68.92
 225,Gardner-Webb,68.83
 226,Campbell,68.81
-227,Jacksonville State,68.68
+227,Jacksonville St.,68.68
 228,Howard,68.63
 229,Rhode Island,68.63
-230,Northern Arizona,68.62
+230,N. Arizona,68.62
 231,San Diego,68.53
 232,Delaware,68.49
 233,Stetson,68.48
 234,Milwaukee,68.42
-236,Northern Colorado,68.22
+236,N. Colorado,68.22
 237,Winthrop,68.09
-238,Northwestern State,67.91
-239,Fort Wayne(PFW),67.91
-240,Northern Illinois,67.76
+238,Northwestern St.,67.91
+239,Fort Wayne,67.91
+240,N. Illinois,67.76
 241,UMBC,67.76
 242,Miami-Ohio,67.67
 243,California,67.64
 244,Robert Morris,67.55
 245,USC Upstate,67.49
-246,Boston U.,67.35
-247,Sacramento State,67.35
-248,North Florida(UNF),67.33
+246,Boston University,67.35
+247,Sacramento St.,67.35
+248,North Fla.,67.33
 249,Canisius,67.22
-250,Army West Point,67.19
+250,Army,67.19
 251,Queens-NC,67.13
 252,UT Arlington,67.05
 253,Niagara,66.95
 254,Valparaiso,66.93
-255,Illinois State,66.89
+255,Illinois St.,66.89
 256,Dartmouth,66.86
-257,SE Missouri State(SEMO),66.85
+257,SE Missouri St.,66.85
 258,Jacksonville,66.75
-259,Western Illinois,66.57
+259,W. Illinois,66.57
 260,Fairfield,66.53
 261,Bellarmine,66.52
 262,Fairleigh Dickinson,66.52
@@ -266,99 +266,99 @@ Rank,Team,Rating
 265,Arkansas State,66.36
 266,Lehigh,66.33
 267,Marist,66.1
-268,Portland State,66.01
+268,Portland St.,66.01
 269,New Hampshire,65.96
 270,Lafayette,65.92
-271,Illinois-Chicago,65.88
+271,Illinois Chicago,65.88
 272,Merrimack,65.77
 273,SIU-Edwardsville,65.74
 274,Mount St. Mary's,65.72
 275,Bowling Green,65.65
-276,Georgia State,65.63
+276,Ga. St.,65.63
 277,UTSA,65.59
 278,UTRGV,65.49
-279,American U.,65.49
+279,American,65.49
 280,UC San Diego,65.48
 281,Manhattan,65.46
 282,North Dakota,65.35
-283,Idaho State,65.34
+283,Idaho St.,65.34
 284,South Dakota,65.33
-285,Md.-Eastern Shore(UMES),65.21
-286,Coastal Carolina,65.12
+285,Md.-Eastern Shore,65.21
+286,Coastal Car.,65.12
 287,Northeastern,65.09
-288,Saint Peter's,65.04
-289,Tennessee State,65.03
-290,North Alabama,65.02
+288,St. Peter's,65.04
+289,Tennessee St.,65.03
+290,North Ala.,65.02
 291,SE Louisiana,64.93
-292,CS Bakersfield,64.89
-293,Cal Poly-SLO,64.86
+292,Cal State Bakersfield,64.89
+293,California Polytechnic,64.86
 294,ULM,64.75
 295,Tulsa,64.71
-296,Southern U.,64.66
-297,Binghamton-NY,64.64
-298,Texas Southern,64.52
+296,S. U.,64.66
+297,Binghamton,64.64
+298,TX S.,64.52
 299,High Point,64.49
 300,Prairie View A&M,64.41
-301,Eastern Michigan,64.38
-302,Nicholls State,64.38
+301,E. Michigan,64.38
+302,Nicholls St.,64.38
 303,Tennessee-Martin,64.35
 304,William & Mary,64.28
-305,Stony Brook-NY,64.25
+305,Stony Brook,64.25
 306,Tennessee Tech,64.24
-307,Western Michigan,64.22
+307,W. Michigan,64.22
 308,Maine,63.96
 309,Denver,63.89
 310,Loyola-Maryland,63.84
 311,Bucknell,63.81
 312,Wagner,63.71
-313,Jackson State,63.55
+313,Jackson St.,63.55
 314,NC A&T,63.34
-315,Chicago State,63.22
-316,Kansas City(UMKC),63.03
-317,Charleston Southern,62.97
+315,Chicago St.,63.22
+316,Kansas City,63.03
+317,Charleston S.,62.97
 318,Sacred Heart,62.96
 319,The Citadel,62.84
-320,Southern Indiana,62.8
-321,Little Rock,62.73
-322,Omaha(Neb.-Omaha),62.63
+320,S. Indiana,62.8
+321,Lit Rock,62.73
+322,Omaha,62.63
 323,Idaho,62.48
 324,Alabama A&M,62.35
 325,Elon,62.22
-326,Central Michigan,62.16
-327,NJIT(New Jersey Tech),62.14
-328,Saint Francis-Pa.,62.01
-329,Texas A&M-Commerce,61.7
-330,CS Northridge,61.66
-331,Morgan State,61.64
+326,C. Michigan,62.16
+327,NJIT,62.14
+328,St. Francis-Pa.,62.01
+329,TX A&M-Commerce,61.7
+330,Cal State Northridge,61.66
+331,Morgan St.,61.64
 332,New Orleans,61.53
-333,Albany-NY,61.35
+333,Albany,61.35
 334,Austin Peay,61.26
 335,Monmouth-NJ,61.21
 336,Stonehill,61.04
 337,Hampton,61.0
-338,McNeese State,60.64
+338,McNeese St.,60.64
 339,Holy Cross,60.63
-340,Presbyterian College,60.6
+340,Presbyterian,60.6
 341,Columbia,60.47
-342,Central Connecticut St.,60.38
-343,Central Arkansas,60.08
+342,C. Connecticut St.,60.38
+343,C. AR,60.08
 344,Evansville,59.8
 345,VMI,59.67
-346,Ark.-Pine Bluff,59.56
-347,Coppin State,59.54
-348,St. Francis-NY,59.54
+346,Arkansas Pine Bluff,59.56
+347,Coppin St.,59.54
+348,St. Francis,59.54
 349,Bethune-Cookman,59.46
 350,Incarnate Word,59.0
-351,Eastern Illinois,58.97
+351,E. Illinois,58.97
 352,IUPUI,58.35
-353,Florida A&M,58.33
+353,Fla. A&M,58.33
 354,Lindenwood,58.12
 355,Alabama State,57.93
-356,SC State,57.54
+356,SC St.,57.54
 357,Lamar,57.53
 358,Houston Christian,57.12
-359,MVSU(Miss. Valley St.),56.38
-360,Delaware State,56.34
+359,MVSU,56.38
+360,Delaware St.,56.34
 361,Green Bay,55.77
 362,Hartford,54.54
-363,Long Island U.(LIU),52.8
+363,Long Island U.,52.8

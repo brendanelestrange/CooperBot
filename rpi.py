@@ -32,3 +32,4 @@ rpi_df = pd.DataFrame(rpi_data, columns=["Team", "RPI Rank", "RPI Rating"])
 
 os.makedirs("results", exist_ok=True)
 rpi_df.to_csv('results/rpi.csv', index=False)
+print("saved to rpi.csv")

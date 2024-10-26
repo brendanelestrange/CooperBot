@@ -17,10 +17,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
+from team_name_standardizer import EnhancedTeamNameStandardizer
 
 class BasketballRankingsParser:
     def __init__(self):
         self.headers = {'User-Agent': 'Mozilla/5.0'}
+        self.team_name_standardizer = EnhancedTeamNameStandardizer()
         # Updated Sagarin pattern to exclude conference entries
         self.team_pattern = re.compile(
             r'^\s*(\d+)\s+(?!ACC|BIG TEN|WEST COAST|CONFERENCE USA|MISSOURI VALLEY|SOUTHWESTERN|BIG WEST|ATLANTIC SUN|HORIZON|NORTHEAST|INDEPENDENTS|MOUNTAIN WEST|ATLANTIC COAST|SOUTHLAND|OHIO VALLEY|IVY LEAGUE|WESTERN ATHLETIC|SOUTHERN|BIG SKY|METRO ATLANTIC|BIG SOUTH|COLONIAL|SUMMIT LEAGUE|AMERICA EAST|PATRIOT|AMER. ATHLETIC|SOUTHEASTERN|BIG EAST|BIG 12|SEC|PAC 12|AAC|MWC|WCC|MVC|CAA|CUSA|MAC|SUN BELT|WAC)([A-Za-z][A-Za-z. \'\-&()]+?)\s+=?\s+([\d.]+)'
@@ -86,83 +88,17 @@ class BasketballRankingsParser:
             "New Mexico Lobos": "New Mexico",
             "Utah Utes": "Utah"
         }
-        
-        # Team name standardization mappings
-        self.team_name_mappings = {
-            # State Universities
-            "Iowa State": "Iowa St.",
-            "Michigan State": "Michigan St.",
-            "Ohio State": "Ohio St.",
-            "Oklahoma State": "Oklahoma St.",
-            "Oregon State": "Oregon St.",
-            "Washington State": "Washington St.",
-            "Colorado State": "Colorado St.",
-            "Florida State": "Florida St.",
-            "Kansas State": "Kansas St.",
-            "Mississippi State": "Mississippi St.",
-            "North Carolina State": "NC State",
-            "Penn State": "Penn St.",
-            "San Diego State": "San Diego St.",
-            "San Jose State": "San Jose St.",
-            
-            # Other Universities
-            "North Carolina": "UNC",
-            "Southern California": "USC",
-            "Connecticut": "UConn",
-            "California Baptist": "Cal Baptist",
-            "Louisiana State": "LSU",
-            "Southern Methodist": "SMU",
-            "Texas Christian": "TCU",
-            "Virginia Military": "VMI",
-            "Central Florida": "UCF",
-            "Nevada-Las Vegas": "UNLV",
-            "Maryland-Baltimore County": "UMBC",
-            
-            # Saints
-            "Saint Mary's": "St. Mary's",
-            "Saint John's": "St. John's",
-            "Saint Joseph's": "St. Joseph's",
-            "Saint Louis": "St. Louis",
-            "Saint Peter's": "St. Peter's",
-            "Saint Francis": "St. Francis",
-            "Saint Bonaventure": "St. Bonaventure",
-            
-            # Directional Schools
-            "Northern Illinois": "N Illinois",
-            "Southern Illinois": "S Illinois",
-            "Eastern Illinois": "E Illinois",
-            "Western Illinois": "W Illinois",
-            
-            # Special Cases
-            "Texas A&M": "Texas A&M",
-            "Texas A&M-Corpus Christi": "Texas A&M-CC",
-            "Virginia Tech": "Virginia Tech",
-            "Texas Tech": "Texas Tech",
-            "Louisiana Tech": "Louisiana Tech",
-            "Georgia Tech": "Georgia Tech"
-        }
 
     def is_conference(self, name: str) -> bool:
         """Check if the given name is a conference name."""
         return name.strip().upper() in {conf.upper() for conf in self.conferences}
 
     def standardize_team_name(self, team_name: str) -> str:
-        """Standardize team names to ensure consistency across different sources."""
-        # Check ESPN mappings first
-        if team_name in self.espn_mappings:
-            return self.espn_mappings[team_name]
-            
-        # Remove any trailing/leading whitespace and common suffixes
-        clean_name = team_name.strip()
-        clean_name = re.sub(r'\s*\([^)]*\)', '', clean_name)  # Remove anything in parentheses
-        clean_name = re.sub(r'\s*University\s*$', '', clean_name)
-        clean_name = re.sub(r'\s*College\s*$', '', clean_name)
+        """Standardize team names using the EnhancedTeamNameStandardizer."""
+        return self.team_name_standardizer.clean_name(team_name)
         
-        # Check direct mappings first
-        if clean_name in self.team_name_mappings:
-            return self.team_name_mappings[clean_name]
-        
-        return clean_name
+        # Use the external standardizer for general team name cleaning
+        return self.team_name_standardizer.clean_name(team_name)
 
     def clean_text(self, text: str) -> str:
         """Remove HTML tags and clean up the text."""
@@ -217,7 +153,6 @@ class BasketballRankingsParser:
             print(f"Error getting Sagarin rankings: {str(e)}")
             return None
 
-    # [Rest of the class methods remain unchanged...]
     def get_kenpom_rankings(self) -> pd.DataFrame:
         """Get KenPom rankings."""
         url = "https://kenpom.com/index.php"
@@ -312,7 +247,7 @@ class BasketballRankingsParser:
         """Get ESPN BPI rankings with normalized team names."""
         try:
             # Read the saved ESPN CSV
-            espn_df = pd.read_csv('espn.csv')
+            espn_df = pd.read_csv('results/espn.csv')
             
             # Normalize the team names using the ESPN mappings
             espn_df['Team'] = espn_df['Team'].map(self.espn_mappings)
@@ -340,12 +275,12 @@ def main():
     espn_df = parser.get_espn_rankings()
     
     # Save individual rankings
-    sagarin_df.to_csv('sagarin.csv', index=False)
-    kenpom_df.to_csv('kenpom.csv', index=False)
-    ncaa_df.to_csv('ncaa.csv', index=False)
-    rpi_df.to_csv('rpi.csv', index=False)
-    sos_df.to_csv('sos.csv', index=False)
-    espn_df.to_csv('espn_normalized.csv', index=False)  # Save normalized ESPN data
+    sagarin_df.to_csv('results/sagarin.csv', index=False)
+    kenpom_df.to_csv('results/kenpom.csv', index=False)
+    ncaa_df.to_csv('results/ncaa.csv', index=False)
+    rpi_df.to_csv('results/rpi.csv', index=False)
+    sos_df.to_csv('results/sos.csv', index=False)
+    espn_df.to_csv('results/espn_normalized.csv', index=False)  # Save normalized ESPN data
     
     print("\nCombining rankings...")
     
