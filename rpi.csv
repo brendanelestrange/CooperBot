@@ -1,0 +1,363 @@
+Team,RPI Rank,RPI Rating
+Purdue,1,0.680
+UConn,2,0.657
+Houston,3,0.657
+Tennessee,4,0.633
+Alabama,5,0.632
+San Diego St,6,0.630
+Dayton,7,0.628
+N Carolina,8,0.627
+Illinois,9,0.626
+Iowa St,10,0.622
+Drake,11,0.621
+Arizona,12,0.621
+Auburn,13,0.621
+Utah St,14,0.616
+Marquette,15,0.614
+Kansas,16,0.608
+Duke,17,0.604
+Baylor,18,0.603
+Grd Canyon,19,0.602
+Colorado St,20,0.601
+Clemson,21,0.600
+New Mexico,22,0.600
+Colorado,23,0.599
+Creighton,24,0.598
+Indiana St,25,0.598
+Gonzaga,26,0.597
+Wisconsin,27,0.596
+Fla Atlantic,28,0.595
+Nevada,29,0.594
+Duquesne,30,0.594
+Florida,31,0.590
+Yale,32,0.589
+Samford,33,0.587
+Princeton,34,0.587
+Wash State,35,0.585
+Vermont,36,0.585
+Boise St,37,0.584
+St Marys,38,0.583
+S Carolina,39,0.583
+Syracuse,40,0.581
+Bradley,41,0.580
+Oregon,42,0.579
+NC State,43,0.579
+Texas Tech,44,0.579
+Nebraska,45,0.578
+Miss State,46,0.577
+Kentucky,47,0.576
+VCU,48,0.574
+BYU,49,0.574
+Virginia,50,0.573
+Northwestern,51,0.572
+McNeese St,52,0.572
+Seton Hall,53,0.572
+Loyola-Chi,54,0.571
+S Florida,55,0.571
+Michigan St,56,0.570
+UAB,57,0.569
+UNLV,58,0.569
+Cornell,59,0.567
+Texas,60,0.567
+Texas A&M,61,0.567
+App State,62,0.566
+Memphis,63,0.566
+UC Irvine,64,0.564
+Col Charlestn,65,0.564
+James Mad,66,0.563
+Richmond,67,0.563
+Utah,68,0.562
+St Johns,69,0.560
+Pittsburgh,70,0.560
+Mississippi,71,0.559
+Cincinnati,72,0.559
+Indiana,73,0.558
+Ohio St,74,0.555
+Oakland,75,0.555
+TX Christian,76,0.553
+Oklahoma,77,0.553
+Akron,78,0.553
+Wake Forest,79,0.552
+Iowa,80,0.549
+Providence,81,0.549
+Florida St,82,0.548
+Geo Mason,83,0.548
+LA Tech,84,0.548
+VA Tech,85,0.548
+St Bonavent,86,0.548
+Morehead St,87,0.547
+N Iowa,88,0.547
+St Josephs,89,0.546
+Boston Col,90,0.546
+Tarleton St,91,0.546
+U Mass,92,0.545
+Georgia,93,0.544
+Belmont,94,0.544
+Kansas St,95,0.543
+NC-Wilmgton,96,0.543
+Charlotte,97,0.542
+Villanova,98,0.540
+Hofstra,99,0.540
+High Point,100,0.539
+Xavier,101,0.538
+Washington,102,0.538
+W Carolina,103,0.537
+S Methodist,104,0.535
+San Francisco,105,0.533
+TX-Arlington,106,0.533
+Mass Lowell,107,0.531
+Toledo,108,0.531
+UCF,109,0.531
+North Texas,110,0.530
+Sam Hous St,111,0.529
+Colgate,112,0.529
+E Washingtn,113,0.529
+Seattle,114,0.528
+NC-Grnsboro,115,0.528
+NC-Asheville,116,0.528
+Drexel,117,0.528
+Santa Clara,118,0.526
+Bryant,119,0.526
+Butler,120,0.526
+USC,121,0.526
+Arkansas St,122,0.525
+Arkansas,123,0.524
+Montana,124,0.524
+Towson,125,0.522
+GA Tech,126,0.521
+Rutgers,127,0.521
+Fairfield,128,0.521
+Minnesota,129,0.520
+LSU,130,0.519
+Quinnipiac,131,0.519
+Chattanooga,132,0.519
+Weber St,133,0.517
+Louisiana,134,0.517
+Stetson,135,0.517
+Stony Brook,136,0.516
+Youngs St,137,0.516
+Troy,138,0.515
+W Kentucky,139,0.514
+Maryland,140,0.514
+Penn St,141,0.513
+Arizona St,142,0.512
+UCSD,143,0.512
+S Dakota St,144,0.512
+S Illinois,145,0.511
+Gard-Webb,146,0.511
+Davidson,147,0.510
+Wyoming,148,0.510
+St Peters,149,0.509
+Wofford,150,0.509
+Missouri St,151,0.509
+Lg Beach St,152,0.509
+TN Martin,153,0.508
+Cleveland St,154,0.507
+E Tenn St,155,0.507
+Monmouth,156,0.507
+Furman,157,0.507
+Longwood,158,0.506
+UC Davis,159,0.506
+UCLA,160,0.505
+Miami,161,0.505
+Grambling St,162,0.504
+Texas St,163,0.504
+St. Louis,164,0.504
+N Hampshire,165,0.503
+Lipscomb,166,0.503
+Utah Valley,167,0.502
+IPFW,168,0.501
+Nicholls,169,0.501
+Ohio,170,0.500
+Liberty,171,0.499
+Evansville,172,0.499
+Merrimack,173,0.498
+N Kentucky,174,0.497
+Stanford,175,0.497
+WI-Milwkee,176,0.496
+Wright St,177,0.496
+Notre Dame,178,0.495
+Michigan,179,0.495
+N Colorado,180,0.495
+Delaware,181,0.495
+Wichita St,182,0.494
+Ste F Austin,183,0.494
+Kent St,184,0.494
+Central Mich,185,0.494
+WI-Grn Bay,186,0.493
+Harvard,187,0.492
+Brown,188,0.492
+California,189,0.489
+Hawaii,190,0.489
+San Diego,191,0.489
+Norfolk St,192,0.488
+Rhode Island,193,0.488
+Illinois St,194,0.488
+Temple,195,0.487
+Mercer,196,0.487
+W Illinois,197,0.486
+La Salle,198,0.485
+Bowling Grn,199,0.485
+Austin Peay,200,0.485
+TX El Paso,201,0.484
+Rider,202,0.484
+S Mississippi,203,0.484
+Marist,204,0.483
+Maine,205,0.483
+Oklahoma St,206,0.482
+Tulane,207,0.482
+Abl Christian,208,0.481
+Southern,209,0.481
+Murray St,210,0.481
+E Kentucky,211,0.481
+Winthrop,212,0.480
+TX A&M-CC,213,0.480
+St. Thomas,214,0.480
+Fordham,215,0.480
+Binghamton,216,0.479
+Oregon St,217,0.479
+UC Riverside,218,0.479
+Portland St,219,0.478
+Iona,220,0.478
+UCSB,221,0.476
+Fresno St,222,0.475
+Central Conn,223,0.475
+Canisius,224,0.474
+Cal St Nrdge,225,0.474
+W Virginia,226,0.474
+Montana St,227,0.474
+E Carolina,228,0.473
+TX Southern,229,0.473
+Geo Wshgtn,230,0.472
+CS Fullerton,231,0.472
+Radford,232,0.471
+Miami,233,0.470
+AR Lit Rock,234,0.470
+S Alabama,235,0.469
+Northeastrn,236,0.469
+Tulsa,237,0.469
+Georgia St,238,0.468
+Queens,239,0.468
+TN State,240,0.468
+Lamar,241,0.467
+Vanderbilt,242,0.467
+IL-Chicago,243,0.467
+Alcorn St,244,0.466
+Cal Baptist,245,0.466
+Marshall,246,0.466
+N Dakota St,247,0.465
+N Arizona,248,0.465
+Missouri,249,0.464
+Kansas City,250,0.464
+Rice,251,0.463
+Albany,252,0.463
+Wagner,253,0.462
+Niagara,254,0.460
+North Dakota,255,0.460
+U Penn,256,0.459
+N Alabama,257,0.459
+Chicago St,258,0.459
+Middle Tenn,259,0.459
+N Illinois,260,0.458
+Jackson St,261,0.457
+Portland,262,0.455
+Columbia,263,0.455
+SIU Edward,264,0.454
+Jacksonville,265,0.454
+Denver,266,0.453
+San Jose St,267,0.453
+Loyola Mymt,268,0.453
+Utah Tech,269,0.453
+N Florida,270,0.453
+N Mex State,271,0.452
+Howard,272,0.451
+Pepperdine,273,0.451
+Bucknell,274,0.450
+Georgetown,275,0.450
+NC Central,276,0.448
+SE Louisiana,277,0.448
+Air Force,278,0.447
+Fla Gulf Cst,279,0.447
+Beth-Cook,280,0.447
+UL Monroe,281,0.446
+Kennesaw St,282,0.445
+Louisville,283,0.445
+Lehigh,284,0.444
+W Michigan,285,0.444
+Idaho St,286,0.443
+Ball St,287,0.443
+S Utah,288,0.442
+Jksnville St,289,0.442
+CS Bakersfld,290,0.442
+S Car State,291,0.442
+Charl South,292,0.441
+UTSA,293,0.439
+Boston U,294,0.436
+E Illinois,295,0.434
+Sacred Hrt,296,0.434
+Mt St Marys,297,0.434
+Oral Roberts,298,0.433
+Citadel,299,0.432
+Valparaiso,300,0.432
+Alabama St,301,0.431
+Le Moyne,302,0.431
+Neb Omaha,303,0.429
+Delaware St,304,0.429
+F Dickinson,305,0.428
+Campbell,306,0.428
+DePaul,307,0.427
+SC Upstate,308,0.427
+E Michigan,309,0.427
+Alab A&M,310,0.427
+Elon,311,0.427
+Maryland BC,312,0.424
+TX A&M-Com,313,0.423
+Manhattan,314,0.423
+Presbyterian,315,0.423
+Florida Intl,316,0.422
+Sac State,317,0.421
+Rob Morris,318,0.421
+American,319,0.419
+Idaho,320,0.419
+GA Southern,321,0.419
+Lafayette,322,0.418
+NJIT,323,0.415
+NC A&T,324,0.414
+Dartmouth,325,0.411
+Old Dominion,326,0.411
+Prairie View,327,0.411
+Morgan St,328,0.410
+TN Tech,329,0.407
+Ark Pine Bl,330,0.406
+Coastal Car,331,0.405
+Bellarmine,332,0.403
+South Dakota,333,0.403
+Florida A&M,334,0.400
+Wm & Mary,335,0.400
+Navy,336,0.399
+TX-Pan Am,337,0.397
+S Indiana,338,0.395
+Hampton,339,0.395
+Buffalo,340,0.393
+Siena,341,0.392
+Holy Cross,342,0.390
+Central Ark,343,0.388
+NW State,344,0.387
+Pacific,345,0.387
+New Orleans,346,0.385
+SE Missouri,347,0.382
+Army,348,0.382
+LIU,349,0.382
+Lindenwood,350,0.381
+Loyola-MD,351,0.377
+Cal Poly,352,0.374
+VMI,353,0.374
+IU Indy,354,0.372
+St Fran,355,0.372
+Detroit,356,0.369
+Hsn Christian,357,0.367
+Maryland ES,358,0.365
+Incar Word,359,0.365
+Stonehill,360,0.362
+Miss Val St,361,0.346
+Coppin St,362,0.332
