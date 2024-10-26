@@ -5,7 +5,7 @@ Created on Fri Oct 25 23:10:05 2024
 
 @author: brendan
 """
-
+import os
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -28,5 +28,6 @@ for row in soup_sos.find_all('tr')[1:]:
         
 sos_df = pd.DataFrame(sos_data, columns=["Team", "SOS Rank", "SOS Rating"])
 
-
-sos_df.to_csv('sos.csv', index=False)
+os.makedirs("results", exist_ok=True)
+sos_df.to_csv('results/sos.csv', index=False)
+print("saved to results/sos.csv")

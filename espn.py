@@ -1,4 +1,5 @@
 import time
+import os
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -61,4 +62,8 @@ else:
     print("Mismatch in data length between team names and BPI data lists.")
     print(f"Team names found: {len(team_names)}")
     print(f"BPI data entries found: {len(bpi_data)}")
-espn_df.to_csv('espn.csv', index=False)
+    
+    #Ensure the "results" folder exists
+os.makedirs("results", exist_ok=True)
+
+espn_df.to_csv('results/espn.csv', index=False)

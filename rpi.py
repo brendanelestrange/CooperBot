@@ -5,7 +5,7 @@ Created on Fri Oct 25 23:09:59 2024
 
 @author: brendan
 """
-
+import os
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -30,5 +30,5 @@ for row in soup_rpi.find_all('tr')[1:]:
 # Create DataFrame for RPI data outside the loop
 rpi_df = pd.DataFrame(rpi_data, columns=["Team", "RPI Rank", "RPI Rating"])
 
-
-rpi_df.to_csv('rpi.csv', index=False)
+os.makedirs("results", exist_ok=True)
+rpi_df.to_csv('results/rpi.csv', index=False)

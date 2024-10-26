@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import re
 from typing import Optional, Dict
+import os
 
 class BasketballRankingsParser:
     def __init__(self):
@@ -93,7 +94,8 @@ def main():
     teams_df = parser.parse_rankings(url)
     
     if teams_df is not None:
-        teams_df.to_csv('sagarin.csv', index=False)
+        os.makedirs("results", exist_ok=True)
+        teams_df.to_csv('results/sagarin.csv', index=False)
         print("\nData saved to sagarin.csv")
 
 if __name__ == "__main__":

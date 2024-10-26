@@ -5,7 +5,7 @@ Created on Fri Oct 25 23:10:24 2024
 
 @author: brendan
 """
-
+import os
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -36,4 +36,6 @@ kenpom_df = pd.DataFrame({
     'KP Net Rtg': netrtg
 })
 
-kenpom_df.to_csv('kenpom.csv', index=False)
+os.makedirs("results", exist_ok=True)
+
+kenpom_df.to_csv('results/kenpom.csv', index=False)

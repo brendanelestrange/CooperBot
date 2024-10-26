@@ -5,7 +5,7 @@ Created on Fri Oct 25 23:10:10 2024
 
 @author: brendan
 """
-
+import os
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -31,5 +31,5 @@ for row in soup_ncaa.find_all('tr')[1:]:
 # Create DataFrame for NCAA data
 ncaa_df = pd.DataFrame(ncaa_data, columns=["Team", "NCAA Rank", "Road", "Neutral", "Home", "Quad1", "Quad2", "Quad3", "Quad4"])
 
-
-ncaa_df.to_csv('ncaa.csv', index=False)
+os.makedirs("results", exist_ok=True)
+ncaa_df.to_csv('results/ncaa.csv', index=False)
