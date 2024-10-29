@@ -487,10 +487,6 @@ def main():
         ("Texas A&M CC", "Texas A&M-Corpus Christi")
     ]
 
-    for name1, name2 in pairs:
-        result = standardizer.are_same_team(name1, name2)
-        print(f"'{name1}' and '{name2}' are{
-              ' ' if result else ' not '}the same team")
 
 
 if __name__ == "__main__":
