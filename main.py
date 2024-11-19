@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-
 """
 Combined Basketball Rankings Script
-Combines functionality from sagarin.py, cooperbot.py, espn.py, kenpom.py, ncaa.py, rpi.py, and sos.py
-with consistent team name handling
+Combines rankings from multiple sources
 """
 
 import time
 import requests
 import pandas as pd
 import re
-from typing import Optional, Dict
+from typing import Optional
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -23,28 +22,9 @@ class BasketballRankingsParser:
     def __init__(self):
         self.headers = {'User-Agent': 'Mozilla/5.0'}
         self.team_name_standardizer = EnhancedTeamNameStandardizer()
-        # Updated Sagarin pattern to exclude conference entries
-        self.team_pattern = re.compile(
-            r'^\s*(\d+)\s+(?!ACC|BIG TEN|WEST COAST|CONFERENCE USA|MISSOURI VALLEY|SOUTHWESTERN|BIG WEST|ATLANTIC SUN|HORIZON|NORTHEAST|INDEPENDENTS|MOUNTAIN WEST|ATLANTIC COAST|SOUTHLAND|OHIO VALLEY|IVY LEAGUE|WESTERN ATHLETIC|SOUTHERN|BIG SKY|METRO ATLANTIC|BIG SOUTH|COLONIAL|SUMMIT LEAGUE|AMERICA EAST|PATRIOT|AMER. ATHLETIC|SOUTHEASTERN|BIG EAST|BIG 12|SEC|PAC 12|AAC|MWC|WCC|MVC|CAA|CUSA|MAC|SUN BELT|WAC)([A-Za-z][A-Za-z. \'\-&()]+?)\s+=?\s+([\d.]+)'
-        )
-        
-        # Define known conference names for filtering Sagarin data
-        self.conferences = {
-            'ACC', 'BIG TEN', 'BIG EAST', 'BIG 12', 'SEC', 'PAC 12',
-            'AAC', 'MWC', 'WCC', 'MVC', 'CAA', 'CUSA', 'MAC',
-            'SUN BELT', 'WAC'
-        }
-
-
-    def is_conference(self, name: str) -> bool:
-        """Check if the given name is a conference name."""
-        return name.strip().upper() in {conf.upper() for conf in self.conferences}
 
     def standardize_team_name(self, team_name: str) -> str:
         """Standardize team names using the EnhancedTeamNameStandardizer."""
-        return self.team_name_standardizer.clean_name(team_name)
-        
-        # Use the external standardizer for general team name cleaning
         return self.team_name_standardizer.clean_name(team_name)
 
     def clean_text(self, text: str) -> str:
@@ -52,53 +32,6 @@ class BasketballRankingsParser:
         clean = re.sub(r'<[^>]+>', '', text)
         clean = re.sub(r'\[.*?\]', '', clean)
         return clean.strip()
-
-    def parse_sagarin_team_line(self, line: str) -> Optional[Dict]:
-        """Parse a Sagarin team entry line."""
-        match = self.team_pattern.match(line)
-        if match:
-            team_name = match.group(2).strip()
-            # Double-check that it's not a conference name
-            if not self.is_conference(team_name):
-                return {
-                    'Sagarin Rank': int(match.group(1)),
-                    'Team': self.standardize_team_name(team_name),
-                    'Sagarin Rating': float(match.group(3))
-                }
-        return None
-
-    def get_sagarin_rankings(self, url: str) -> Optional[pd.DataFrame]:
-        """Get Sagarin basketball rankings."""
-        try:
-            response = requests.get(url, headers=self.headers)
-            response.raise_for_status()
-            
-            lines = response.text.splitlines()
-            cleaned_lines = [self.clean_text(line) for line in lines]
-            
-            teams_data = []
-            seen_teams = set()
-            
-            for line in cleaned_lines:
-                if not line.strip() or '_' in line or 'FINAL' in line:
-                    continue
-                
-                team_data = self.parse_sagarin_team_line(line)
-                if team_data:
-                    team_name = team_data['Team']
-                    if team_name not in seen_teams:
-                        teams_data.append(team_data)
-                        seen_teams.add(team_name)
-            
-            if teams_data:
-                teams_df = pd.DataFrame(teams_data)
-                return teams_df.sort_values('Sagarin Rank').reset_index(drop=True)
-            
-            return None
-            
-        except Exception as e:
-            print(f"Error getting Sagarin rankings: {str(e)}")
-            return None
 
     def get_kenpom_rankings(self) -> pd.DataFrame:
         """Get KenPom rankings."""
@@ -191,7 +124,6 @@ class BasketballRankingsParser:
         return pd.DataFrame(sos_data, columns=["Team", "SOS Rank", "SOS Rating"])
 
     def get_espn_rankings(self) -> pd.DataFrame:
-
         try:
             options = webdriver.ChromeOptions()
             options.add_argument("--headless")
@@ -206,7 +138,7 @@ class BasketballRankingsParser:
                 try:
                     show_more_button = driver.find_element(By.CLASS_NAME, "loadMore__link")
                     show_more_button.click()
-                    time.sleep(2)  # Wait for more content to load
+                    time.sleep(.3)  # Wait for more content to load
                 except NoSuchElementException:
                     break
             
@@ -242,13 +174,13 @@ class BasketballRankingsParser:
         except Exception as e:
             print(f"Error getting ESPN rankings: {str(e)}")
             return pd.DataFrame(columns=["Team", "BPI Rating", "BPI Rank"])
+
 def main():
     parser = BasketballRankingsParser()
     
     print("Fetching rankings from multiple sources...")
     
     # Get rankings from each source
-    sagarin_df = parser.get_sagarin_rankings("http://sagarin.com/sports/cbsend.htm")
     kenpom_df = parser.get_kenpom_rankings()
     ncaa_df = parser.get_ncaa_rankings()
     rpi_df = parser.get_rpi_rankings()
@@ -256,19 +188,16 @@ def main():
     espn_df = parser.get_espn_rankings()
     
     # Save individual rankings
-    sagarin_df.to_csv('results/sagarin.csv', index=False)
     kenpom_df.to_csv('results/kenpom.csv', index=False)
     ncaa_df.to_csv('results/ncaa.csv', index=False)
     rpi_df.to_csv('results/rpi.csv', index=False)
     sos_df.to_csv('results/sos.csv', index=False)
-    espn_df.to_csv('results/espn_normalized.csv', index=False)  # Save normalized ESPN data
+    espn_df.to_csv('results/espn_normalized.csv', index=False)
     
     print("\nCombining rankings...")
     
     # Merge all DataFrames
     dfs = [kenpom_df, ncaa_df, rpi_df, sos_df, espn_df]
-    if sagarin_df is not None:
-        dfs.append(sagarin_df)
     combined_df = dfs[0]
     for df in dfs[1:]:
         combined_df = pd.merge(combined_df, df, on="Team", how="inner")

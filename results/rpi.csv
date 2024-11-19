@@ -1,365 +1,365 @@
 Team,RPI Rank,RPI Rating
-Pittsburgh,1,0.877
+Gonzaga,1,0.859
 UCF,2,0.853
-Murray State,3,0.831
-Gonzaga,4,0.829
+Pittsburgh,3,0.835
+Murray State,4,0.825
 Furman,5,0.801
-Kentucky,6,0.787
-California,7,0.774
+Kentucky,6,0.772
+California,7,0.768
 Tennessee,8,0.764
 Austin Peay,9,0.760
-Memphis,10,0.745
-Auburn,11,0.743
-UC Riverside,12,0.742
+Memphis,10,0.759
+UC Riverside,11,0.742
+Auburn,12,0.740
 Marquette,13,0.734
-Northern Colorado,14,0.706
-Arizona State,15,0.705
-Kansas,16,0.700
-Ole Miss,17,0.695
-Cornell,18,0.693
-Rhode Island,19,0.693
-Wright St,20,0.690
-Georgia,21,0.685
-Baylor,22,0.683
-Florida,23,0.682
-Fla Atlantic,24,0.682
-Iowa,25,0.681
-La Salle,26,0.680
-Nevada,27,0.673
-W Virginia,28,0.673
-VCU,29,0.668
-Oregon,30,0.668
-Stanford,31,0.668
-Notre Dame,32,0.666
+Kansas,14,0.708
+Ole Miss,15,0.695
+Rhode Island,16,0.693
+Florida Atlantic,17,0.690
+Arizona State,18,0.687
+Stanford,19,0.687
+Florida,20,0.682
+Baylor,21,0.682
+Cornell,22,0.682
+Notre Dame,23,0.680
+Iowa,24,0.678
+Alabama,25,0.676
+La Salle,26,0.674
+Washington State,27,0.673
+Nevada,28,0.673
+Northern Colorado,29,0.672
+Oregon,30,0.671
+West Virginia,31,0.666
+VCU,32,0.666
 St. John's,33,0.663
-Toledo,34,0.657
-Wash State,35,0.656
- Northern Arizona,36,0.654
-Saint Mary's,37,0.654
-CCSU,38,0.653
-Indiana,39,0.653
-Loyola Chicago,40,0.649
-New Mexico,41,0.647
-Utah St,42,0.646
-Texas A&M,43,0.645
-Ohio State,44,0.644
-Butler Bulldogs,45,0.643
-North Texas,46,0.642
-Boise State,47,0.641
-UT Martin,48,0.639
-Grambling State,49,0.635
-Montana,50,0.635
-Colorado,51,0.635
-North Florida,52,0.634
-Washington,53,0.634
-Boston College,54,0.634
-Michigan,55,0.633
-Missouri State,56,0.630
-Mount St. Mary's,57,0.629
-Texas Tech,58,0.628
-George Washington,59,0.628
-Wake Forest,60,0.626
-East Carolina,61,0.623
-Troy,62,0.622
-Princeton,63,0.621
-Wisconsin,64,0.619
-Siena,65,0.617
-St. Thomas,66,0.616
-Hofstra,67,0.613
-NC-Wilmgton,68,0.612
-Penn State,69,0.611
-San Francisco,70,0.609
-Long Island,71,0.607
-Stony Brook,72,0.605
-Nebraska,73,0.603
-Samford,74,0.603
-California Baptist,75,0.602
-Belmont,76,0.600
-Cal State Bakersfield,77,0.600
-Maryland,78,0.599
-North Carolina A&T,79,0.598
-Northwestern,80,0.595
-Cal Poly,81,0.594
-LSU,82,0.593
-Missouri,83,0.592
-Fort Wayne,84,0.591
-Radford,85,0.589
-Dayton,86,0.589
-Gardner-Webb,87,0.588
-Columbia,88,0.588
-Wichita St,89,0.583
-Creighton,90,0.576
-Bucknell,91,0.574
-St. Francis,92,0.573
-Purdue,93,0.572
-Oklahoma State,94,0.572
-Arkansas,95,0.571
-Mercyhurst,96,0.571
-Albany,97,0.571
-TX-Pan Am,98,0.570
-UC Irvine,99,0.569
-Providence,100,0.569
-Illinois,101,0.566
-Mississippi State,102,0.565
-Virginia,103,0.565
-Longwood,104,0.565
-UCSB,105,0.563
-Central Michigan,106,0.562
-SIUE,107,0.561
-Charleston,108,0.556
-Holy Cross,109,0.556
-Vanderbilt,110,0.556
-Weber St,111,0.556
-Kent State,112,0.553
-Northeastern,113,0.553
-UMass Lowell,114,0.552
-Portland State,115,0.550
-Clemson,116,0.548
-Eastern Illinois,117,0.546
-Duke,118,0.546
-Oakland,119,0.545
-Fairleigh Dickinson,120,0.545
-Bryant,121,0.545
-Liberty,122,0.544
-VA Tech,123,0.542
-Army,124,0.542
-Georgia Southern,125,0.541
-Delaware,126,0.541
+CCSU,34,0.653
+Toledo,35,0.652
+Saint Mary's,36,0.651
+Loyola Chicago,37,0.649
+Indiana,38,0.649
+Wright State,39,0.649
+New Mexico,40,0.647
+Texas A&M,41,0.645
+Ohio State,42,0.644
+Oklahoma State,43,0.641
+Boise State,44,0.641
+Butler Bulldogs,45,0.638
+Troy,46,0.638
+Georgia,47,0.637
+Grambling State,48,0.635
+Washington,49,0.634
+Boston College,50,0.634
+Michigan,51,0.632
+Northern Arizona,52,0.631
+Missouri State,53,0.630
+St. Thomas,54,0.627
+Wisconsin,55,0.624
+Wake Forest,56,0.624
+Mount St. Mary's,57,0.624
+East Carolina,58,0.623
+Princeton,59,0.619
+UT Martin,60,0.618
+Montana,61,0.618
+San Diego State,62,0.617
+Mississippi State,63,0.614
+Siena,64,0.614
+Bryant,65,0.613
+UNCW,66,0.612
+Penn State,67,0.611
+San Francisco,68,0.609
+Hofstra,69,0.609
+Charleston,70,0.609
+Stony Brook,71,0.605
+Long Island,72,0.603
+Missouri,73,0.602
+California Baptist,74,0.602
+Maryland,75,0.601
+Belmont,76,0.599
+Utah State,77,0.597
+Northwestern,78,0.595
+Cal Poly,79,0.594
+Colorado,80,0.592
+Fort Wayne,81,0.591
+North Carolina A&T,82,0.589
+Dayton,83,0.589
+Columbia,84,0.588
+Nebraska,85,0.588
+Purdue,86,0.588
+Gardner-Webb,87,0.585
+LSU,88,0.578
+Radford,89,0.576
+Texas Tech,90,0.576
+St. Francis,91,0.573
+UTRGV,92,0.571
+UC Irvine,93,0.569
+Providence,94,0.569
+Albany,95,0.569
+Illinois,96,0.566
+North Alabama,97,0.565
+Virginia,98,0.565
+Mercyhurst,99,0.565
+Portland State,100,0.565
+UCSB,101,0.563
+Cal State Bakersfield,102,0.563
+Central Michigan,103,0.562
+SIUE,104,0.561
+Longwood,105,0.560
+Creighton,106,0.560
+Arkansas,107,0.559
+Samford,108,0.559
+Grand Canyon,109,0.559
+Weber State,110,0.558
+Holy Cross,111,0.557
+UMass Lowell,112,0.556
+George Washington,113,0.554
+Vanderbilt,114,0.553
+Northeastern,115,0.553
+Liberty,116,0.552
+Kent State,117,0.550
+Oakland,118,0.549
+Xavier,119,0.547
+Eastern Illinois,120,0.546
+Duke,121,0.546
+Clemson,122,0.542
+Virginia Tech,123,0.542
+Wichita State,124,0.542
+Army,125,0.542
+Georgia Southern,126,0.541
 UCLA,127,0.541
 Jacksonville,128,0.541
 Portland,129,0.540
-SMU,130,0.539
-Idaho State,131,0.537
-Xavier,132,0.536
-Alabama,133,0.534
-Kansas City,134,0.531
-Grand Canyon,135,0.529
-Merrimack,136,0.529
-UC Davis,137,0.528
-Tennessee Tech,138,0.528
-N Carolina,139,0.526
-South Dakota,140,0.524
-Sam Houston State,141,0.524
-Tulane,142,0.523
-SC Upstate,143,0.523
-NC State,144,0.523
-High Point,145,0.522
-North Alabama,146,0.522
-USC,147,0.522
-Kansas State,148,0.522
-St Bonavent,149,0.521
-George Mason,150,0.521
-Texas A&M-CC,151,0.521
-Cal State Fullerton,152,0.520
-Florida State,153,0.518
-Loyola-MD,154,0.518
-Denver,155,0.517
-Louisiana Tech,156,0.516
-Akron,157,0.516
-Georgetown,158,0.515
-Winthrop,159,0.515
-Youngs St,160,0.514
-Southern Illinois,161,0.514
-Delaware State,162,0.513
-UNLV,163,0.510
-Santa Clara,164,0.507
+Bucknell,130,0.540
+Fairleigh Dickinson,131,0.540
+UC Davis,132,0.536
+McNeese State,133,0.533
+High Point,134,0.533
+Buffalo,135,0.532
+Loyola-MD,136,0.532
+Cal State Fullerton,137,0.529
+Merrimack,138,0.529
+UMKC,139,0.526
+Sam Houston State,140,0.525
+Kansas State,141,0.525
+South Dakota,142,0.524
+SMU,143,0.523
+Denver,144,0.523
+North Carolina,145,0.522
+St. Bonaventure,146,0.521
+George Mason,147,0.521
+Texas A&M-CC,148,0.521
+Florida State,149,0.520
+USC Upstate,150,0.520
+Southern Illinois,151,0.518
+Louisiana Tech,152,0.516
+Akron,153,0.516
+Georgetown,154,0.515
+Winthrop,155,0.515
+Youngstown State,156,0.514
+UNC Asheville,157,0.514
+Delaware State,158,0.513
+UNLV,159,0.510
+Green Bay,160,0.509
+Arkansas State,161,0.509
+Oregon State,162,0.508
+Tulane,163,0.508
+North Florida,164,0.506
 Illinois-Chicago,165,0.505
-Southern Utah,166,0.505
-Northwestern State,167,0.505
-Charlotte,168,0.503
-Jackson State,169,0.503
-Rider,170,0.503
-Fairfield,171,0.503
-Fordham,172,0.501
+American University,166,0.505
+Jackson State,167,0.504
+Syracuse,168,0.503
+Rider,169,0.503
+Fairfield,170,0.503
+Fordham,171,0.501
+Temple,172,0.500
 Kennesaw State,173,0.500
-Middle Tennessee State,174,0.499
-Towson,175,0.499
-Wm & Mary,176,0.499
-Green Bay,177,0.499
-Miami,178,0.498
-American University,179,0.496
-Lafayette,180,0.495
-Temple,181,0.495
-Arkansas State,182,0.493
-Hawaii,183,0.493
-Hampton,184,0.492
-Iona,185,0.492
-Syracuse,186,0.490
-UT Arlington,187,0.490
-Cal State Northridge,188,0.489
-Arizona,189,0.489
-Le Moyne,190,0.489
-Chattanooga,191,0.489
-Northern Iowa,192,0.488
-Minnesota,193,0.484
-Vermont,194,0.481
-Saint Joseph's,195,0.478
-Wagner,196,0.478
-Coastal Carolina,197,0.477
-Oregon State,198,0.476
-South Carolina,199,0.476
-South Alabama,200,0.474
-Jacksonville State,201,0.474
-Iowa State,202,0.472
-Cleveland State,203,0.472
-Alabama State,204,0.472
-TCU,205,0.470
-W Kentucky,206,0.470
-Binghamton,207,0.469
-Evansville,208,0.469
-Lehigh,209,0.469
-New Mexico State,210,0.465
-Texas A&M Commerce,211,0.465
-Bradley,212,0.465
-Omaha,213,0.465
-Texas Southern,214,0.464
-Houston Christian,215,0.464
-Alcorn State,216,0.462
-Houston,217,0.462
-Villanova,218,0.461
-Robert Morris,219,0.460
-Louisville,220,0.460
+William & Mary,174,0.499
+Santa Clara,175,0.498
+Miami FL,176,0.498
+NC State,177,0.496
+SELA,178,0.496
+Northwestern State,179,0.495
+Towson,180,0.495
+Lafayette,181,0.494
+USC,182,0.492
+Delaware,183,0.492
+TCU,184,0.491
+Cleveland State,185,0.491
+Tennessee Tech,186,0.491
+North Texas,187,0.490
+Charlotte,188,0.490
+Arizona,189,0.490
+Cal State Northridge,190,0.489
+Le Moyne,191,0.489
+Chattanooga,192,0.486
+Middle Tennessee State,193,0.485
+Vermont,194,0.485
+UAB,195,0.484
+Southern Utah,196,0.484
+Hampton,197,0.484
+UT Arlington,198,0.484
+Northern Iowa,199,0.481
+Saint Joseph's,200,0.478
+Wagner,201,0.478
+South Alabama,202,0.474
+Coastal Carolina,203,0.473
+Western Kentucky,204,0.473
+Braves,205,0.473
+Hawaii,206,0.472
+Alabama State,207,0.472
+Iona,208,0.471
+Jacksonville State,209,0.470
+Villanova,210,0.470
+Binghamton,211,0.469
+Lehigh,212,0.469
+New Mexico State,213,0.465
+Texas A&M Commerce,214,0.465
+Rutgers,215,0.464
+South Florida,216,0.461
+Utah Tech,217,0.461
+Louisville,218,0.460
+Drexel,219,0.459
+Houston,220,0.459
 Eastern Kentucky,221,0.459
 Norfolk State,222,0.459
 Manhattan,223,0.458
-Florida International,224,0.458
-Rutgers,225,0.457
-Quinnipiac,226,0.456
-Eastern Washington,227,0.454
-Massachusetts,228,0.454
-Utah Tech,229,0.454
-Detroit-Mercy,230,0.454
-Stephen F. Austin,231,0.453
-North Dakota State,232,0.452
-South Florida,233,0.448
-Drexel,234,0.447
-Campbell,235,0.447
-Buffalo,236,0.447
-Coppin State,237,0.444
-Oklahoma,238,0.444
-Montana State,239,0.444
-Yale,240,0.443
-DePaul,241,0.443
-SELA,242,0.443
-Nicholls State,243,0.442
-Incarnate Word,244,0.441
-Florida A&M,245,0.441
-Stonehill,246,0.440
-Drake,247,0.438
-Bethune-Cookman,248,0.438
-Mississippi Valley State,249,0.438
-UAB,250,0.435
-Maine,251,0.435
-Georgia Tech,252,0.432
-Cincinnati,253,0.431
-Fresno State,254,0.431
-Louisiana-Monroe,255,0.431
-Saint Peter's,256,0.431
-Appalachian State,257,0.430
-Chicago State,258,0.430
-Rice,259,0.428
-NC-Grnsboro,260,0.427
-North Carolina Central,261,0.425
-Illinois State,262,0.424
-Southern Indiana,263,0.423
-Seton Hall,264,0.423
-Marist,265,0.422
+Houston Christian,224,0.458
+Omaha,225,0.457
+VMI,226,0.457
+Quinnipiac,227,0.456
+Pepperdine,228,0.455
+Idaho State,229,0.455
+Massachusetts,230,0.454
+Iowa State,231,0.454
+Detroit-Mercy,232,0.454
+Eastern Washington,233,0.453
+Stephen F. Austin,234,0.453
+Florida A&M,235,0.451
+Texas Southern,236,0.450
+Incarnate Word,237,0.448
+Alcorn State,238,0.448
+South Carolina,239,0.448
+Campbell,240,0.447
+Coppin State,241,0.444
+Oklahoma,242,0.444
+Robert Morris,243,0.443
+DePaul,244,0.443
+Nicholls State,245,0.442
+Mississippi Valley State,246,0.441
+Stonehill,247,0.439
+Montana State,248,0.438
+Cincinnati,249,0.438
+Drake,250,0.438
+UNC Greensboro,251,0.438
+Maine,252,0.435
+Yale,253,0.435
+Saint Peter's,254,0.431
+Chicago State,255,0.430
+Bethune-Cookman,256,0.428
+Prairie View,257,0.427
+Fresno State,258,0.426
+Georgia State,259,0.426
+North Carolina Central,260,0.426
+Michigan State,261,0.425
+Seton Hall,262,0.423
+Marist,263,0.422
+Ohio,264,0.422
+Tarleton State,265,0.422
 Little Rock,266,0.421
-Harvard,267,0.418
-Michigan State,268,0.417
-Tarleton State,269,0.417
-Georgia State,270,0.416
-Abilene Christian,271,0.415
-UConn,272,0.414
-Texas,273,0.411
-Prairie View,274,0.411
-Air Force,275,0.406
-Idaho,276,0.403
-Duquesne,277,0.402
-SEMO,278,0.401
-Marshall,279,0.400
-Northern Illinois,280,0.396
-Mercer,281,0.393
-Northern Kentucky,282,0.389
-Florida Gulf Coast,283,0.385
-Central Arkansas,284,0.385
-Davidson,285,0.382
-Lindenwood,286,0.382
-Southern,287,0.381
-Charleston Southern,288,0.378
-WI-Milwkee,289,0.375
-Lamar,290,0.375
-Pacific,291,0.375
-Indiana State,292,0.372
-Morgan State,293,0.372
-VMI,294,0.367
-Boston University,295,0.366
-W Georgia,296,0.362
-Maryland BC,297,0.360
-Monmouth,298,0.357
-New Orleans,299,0.355
-McNeese State,300,0.354
-Ohio,301,0.354
-Lipscomb,302,0.352
-Texas State,303,0.350
-Valparaiso,304,0.349
-Richmond,305,0.347
-W Michigan,306,0.346
-San Jose State,307,0.344
-Oral Roberts,308,0.344
-Canisius,309,0.342
-Presbyterian Blue Hose,310,0.342
-Navy,311,0.341
-Colgate,312,0.340
-Long Beach State,313,0.340
-Southern Mississippi,314,0.340
-Bellarmine,315,0.339
-Arkansas-Pine Bluff,316,0.339
-Tulsa,317,0.333
-Elon,318,0.333
-Sacred Heart,319,0.329
-South Dakota State,320,0.327
-James Madison,321,0.325
-Miami,322,0.322
-Bowling Grn,323,0.313
-Brown,324,0.312
-Penn,325,0.307
-Old Dominion,326,0.306
-Citadel,327,0.301
-Eastern Michigan,328,0.295
-Morehead State,329,0.295
-IUPUI,330,0.295
-ETSU,331,0.292
-Loyola Marymount,332,0.292
-Dartmouth,333,0.288
-W Illinois,334,0.286
-NC-Asheville,335,0.276
-San Diego,336,0.273
-UMES,337,0.273
-Niagara,338,0.267
-Ball State,339,0.266
-UTSA,340,0.252
-New Hampshire,341,0.246
-Wofford,342,0.242
-Saint Louis,343,0.242
-Stetson,344,0.235
-Louisiana,345,0.229
-South Carolina State,346,0.201
-NJIT,347,0.190
-BYU,348,--
-Utah,349,--
-San Diego State,350,--
-Colorado State,351,--
-Seattle,352,--
-Wyoming,353,--
-North Dakota,354,--
-Queens,355,--
-Utah Valley,356,--
-UCSD,357,--
+Harvard,267,0.419
+Southern Indiana,268,0.418
+South Dakota State,269,0.415
+Abilene Christian,270,0.415
+UConn,271,0.414
+Idaho,272,0.413
+Minnesota,273,0.411
+Texas,274,0.411
+Appalachian State,275,0.410
+Colgate,276,0.407
+Rice,277,0.406
+Duquesne,278,0.405
+Northern Illinois,279,0.404
+Florida International,280,0.403
+Seattle,281,0.403
+SEMO,282,0.402
+Georgia Tech,283,0.400
+Monmouth,284,0.398
+Pacific,285,0.397
+Marshall,286,0.397
+Air Force,287,0.394
+Mercer,288,0.393
+Illinois State,289,0.392
+Florida Gulf Coast,290,0.391
+Northern Kentucky,291,0.389
+Arkansas-Pine Bluff,292,0.388
+Morgan State,293,0.386
+Central Arkansas,294,0.385
+North Dakota State,295,0.384
+Davidson,296,0.382
+Southern,297,0.381
+Lindenwood,298,0.380
+Milwaukee,299,0.375
+Lamar,300,0.375
+Miami FL,301,0.373
+Indiana State,302,0.372
+Evansville,303,0.372
+Boston University,304,0.366
+Lipscomb,305,0.365
+IUPUI,306,0.363
+West Georgia,307,0.361
+UMBC,308,0.360
+Southern Mississippi,309,0.356
+New Orleans,310,0.355
+Long Beach State,311,0.354
+Valparaiso,312,0.354
+Texas State,313,0.353
+Louisiana-Monroe,314,0.351
+Western Michigan,315,0.346
+San Jose State,316,0.345
+Canisius,317,0.342
+Richmond,318,0.341
+Navy,319,0.341
+Tulsa,320,0.340
+Presbyterian Blue Hose,321,0.339
+Charleston Southern,322,0.338
+James Madison,323,0.336
+Bellarmine,324,0.332
+Sacred Heart,325,0.329
+Elon,326,0.329
+Oral Roberts,327,0.328
+Penn,328,0.315
+Old Dominion,329,0.313
+Eastern Michigan,330,0.313
+Bowling Green,331,0.313
+Brown,332,0.311
+Citadel,333,0.301
+Morehead State,334,0.295
+UCSD,335,0.293
+ETSU,336,0.292
+Loyola Marymount,337,0.292
+Dartmouth,338,0.288
+Western Illinois,339,0.286
+Niagara,340,0.267
+San Diego,341,0.267
+NJIT,342,0.267
+Ball State,343,0.266
+UMES,344,0.263
+UTSA,345,0.254
+New Hampshire,346,0.246
+Wofford,347,0.245
+Saint Louis,348,0.242
+Stetson,349,0.235
+Louisiana,350,0.229
+Sacramento State,351,0.219
+South Carolina State,352,0.198
+BYU,353,--
+Utah,354,--
+Colorado State,355,--
+Wyoming,356,--
+North Dakota,357,--
 Howard,358,--
-W Carolina,359,--
-Pepperdine,360,--
-TX El Paso,361,--
+Queens,359,--
+Utah Valley,360,--
+Western Carolina,361,--
 Tennessee State,362,--
-Sacramento State,363,--
+UTEP,363,--
 Alabama A&M,364,--
