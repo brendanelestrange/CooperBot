@@ -12,482 +12,705 @@ from difflib import SequenceMatcher
 
 class EnhancedTeamNameStandardizer:
     def __init__(self):
-        # Core mappings for team names (including newly added names)
+        # Core mappings for team names
         self.name_mappings = {
-
-            "A&M-Corpus Christi": "Texas A&M Corpus Christi",
-            "AR Lit Rock": "Arkansas Little Rock",
             "Abl Christian": "Abilene Christian",
-            "Ala.": "Alabama",
-            "Ala. St.": "Alabama State",
+            "Abilene Christian Wildcats": "Abilene Christian",
+            "Air Force Falcons": "Air Force",
+            "Akron Zips":"Akron",
+            "Alabama Crimson Tide": "Alabama",
             "Alab A&M": "Alabama A&M",
+            "Alabama A&M Bulldogs": "Alabama A&M",
+            "Alabama St":"Alabama State",
+            "Alabama St.": "Alabama State",
+            "Alabama State Hornets": "Alabama State",
+            "UAlbany":"Albany",
+            "UAlbany Great Danes":"Albany",
             "Albany-NY": "Albany",
+            "Alcorn St": "Alcorn State",
             "Alcorn": "Alcorn State",
-            "American U.": "American",
-            "App St.": "Appalachian State",
-            "Appalachian St.": "Appalachian State",
-            "Ark Pine Bl": "Arkansas Pine Bluff",
-            "Ark.-Pine Bluff": "Arkansas Pine Bluff",
-            "Army West Point": "Army",
-
-            "Abilene Christian": "Abilene Christian",
-            "Air Force": "Air Force",
-            "Akron": "Akron",
-            "Ala. St.": "Alabama State",
-            "Alabama A&M": "Alabama A&M",
-            "Alabama State": "Alabama State",
-            "Albany": "Albany",
             "Alcorn St.": "Alcorn State",
-            "Alcorn State": "Alcorn State",
-            "American": "American",
-            "Appalachian State": "Appalachian State",
+            "Alcorn State Braves": "Alcorn State",
+            "American":"American University",
+            "American University Eagles": "American University",
+            "American U.": "American University",
+            "App State": "Appalachian State",
+            "Appalachian St.": "Appalachian State",
+            "App State Mountaineers": "Appalachian State",
+            "Arizona Wildcats": "Arizona",
+            "Arizona St": "Arizona State",
             "Arizona St.": "Arizona State",
-            "Arizona State": "Arizona State",
-            "Arkansas": "Arkansas",
-            "Arkansas Pine Bluff": "Arkansas Pine Bluff",
-            "Arkansas St.": "Arkansas State",
-            "Arkansas State": "Arkansas State",
-            "Army": "Army",
-            "Austin Peay": "Austin Peay",
-            "BYU": "Brigham Young",
-
-            "Beth-Cook": "Bethune-Cookman",
-            "Boise St": "Boise State",
-            "Boise St.": "Boise State",
-            "Boston": "Boston University",
-
-            "Ball St.": "Ball State",
-            "Ball State": "Ball State",
-            "Bellarmine": "Bellarmine",
-            "Belmont": "Belmont",
-            "Bethune Cookman": "Bethune-Cookman",
-            "Bethune-Cookman": "Bethune-Cookman",
-            "Binghamton": "Binghamton",
-            "Binghamton-NY": "Binghamton",
-            "Boise St": "Boise State",
-            "Boise St.": "Boise State",
-            "Boston": "Boston University",
-            "Boston Col": "Boston College",
-            "Boston U": "Boston University",
-            "Boston U.": "Boston University",
-            "Bowling Green": "Bowling Green",
-            "Bowling Grn": "Bowling Green",
-            "Bradley": "Bradley",
-            "Brigham Young": "Brigham Young",
-            "Brown": "Brown",
-            "Bryant": "Bryant",
-            "Bucknell": "Bucknell",
-            "Buffalo": "Buffalo",
-            "Butler": "Butler",
-            "C. Ark": "Central Arkansas",
-
-            "C. Ark.": "Central Arkansas",
-            "C. Arkansas": "Central Arkansas",
-            "C. Conn": "Central Connecticut",
-            "C. Conn. St.": "Central Connecticut",
-            "C. Connecticut": "Central Connecticut",
-            "C. Connecticut St.": "Central Connecticut",
-            "C. Fla.": "Central Florida",
-            "C. Mich": "Central Michigan",
-            "C. Mich.": "Central Michigan",
-            "C. Michigan": "Central Michigan",
-            "CS Bakersfield": "Cal State Bakersfield",
-            "CS Bakersfld": "Cal State Bakersfield",
-            "CS Fullerton": "Cal State Fullerton",
-            "CS Northridge": "Cal State Northridge",
-            "CSU Bakersfield": "Cal State Bakersfield",
-            "CSUN": "Cal State Northridge",
-            "Cal Baptist": "California Baptist",
-            "Cal Poly": "California Polytechnic",
-            "Cal Poly-SLO": "California Polytechnic",
-            "Cal St Nrdge": "Cal State Northridge",
-            "Cal St. Bakersfield": "Cal State Bakersfield",
-            "Cal St. Fullerton": "Cal State Fullerton",
-            "California": "California",
-            "California Baptist": "California Baptist",
-            "Campbell": "Campbell",
-            "Canisius": "Canisius",
-            "Charl South": "Charleston Southern",
-            "Charleston": "Charleston",
-            "Charleston S.": "Charleston Southern",
-            "Charleston So.": "Charleston Southern",
-            "Charlotte": "Charlotte",
-            "Chattanooga": "Chattanooga",
-            "Chicago St.": "Chicago State",
-            "Citadel": "The Citadel",
-            "Cleveland St.": "Cleveland State",
-            "Coastal Car": "Coastal Carolina",
-            "Coastal Car.": "Coastal Carolina",
-            "Col Charlestn": "College of Charleston",
-            "Col. of Charleston": "College of Charleston",
-            "Colgate": "Colgate",
-            "Colorado St.": "Colorado State",
-            "Columbia": "Columbia",
-            "Connecticut": "UConn",
-            "Coppin St.": "Coppin State",
-            "Cornell": "Cornell",
-            "Dartmouth": "Dartmouth",
-            "Davidson": "Davidson",
-            "DePaul": "DePaul",
-            "Delaware": "Delaware",
-            "Delaware St.": "Delaware State",
-            "Denver": "Denver",
-            "Detroit": "Detroit Mercy",
-            "Detroit Mercy": "Detroit Mercy",
-            "Drake": "Drake",
-            "Drexel": "Drexel",
-            "Duquesne": "Duquesne",
-            "E Car.": "East Carolina",
-            "E Illinois": "Eastern Illinois",
-            "E Kentucky": "Eastern Kentucky",
-            "E Michigan": "Eastern Michigan",
-            "E Tenn St.": "East Tennessee State",
-            "E Washingtn": "Eastern Washington",
-            "E. Ill.": "Eastern Illinois",
-            "E. Illinois": "Eastern Illinois",
-            "E. Kentucky": "Eastern Kentucky",
-            "E. Ky.": "Eastern Kentucky",
-            "E. Mich.": "Eastern Michigan",
-            "E. Michigan": "Eastern Michigan",
-            "E. Wash.": "Eastern Washington",
-            "E. Washington": "Eastern Washington",
-            "ETSU": "East Tennessee State",
-            "East Car.": "East Carolina",
-            "East Tennessee St.": "East Tennessee State",
-            "Elon": "Elon",
-            "Evansville": "Evansville",
-            "F Dickinson": "Fairleigh Dickinson",
-            "FDU": "Fairleigh Dickinson",
-            "FGCU": "Florida Gulf Coast",
-            "FIU": "Florida International",
-            "Fairfield": "Fairfield",
-            "Fairleigh Dickinson": "Fairleigh Dickinson",
-            "Fla Atlantic": "Florida Atlantic",
-            "Fla Gulf Cst": "Florida Gulf Coast",
-            "Fla.": "Florida",
-            "Fla. A&M": "Florida A&M",
-            "Fla. Atlantic": "Florida Atlantic",
-            "Fla. Gulf Coast": "Florida Gulf Coast",
-            "Fla. International": "Florida International",
-            "Fla. Intl": "Florida International",
-            "Fla. St.": "Florida State",
-            "Florida": "Florida",
-            "Fordham": "Fordham",
-            "Fort Wayne": "Purdue Fort Wayne",
-            "Fresno St.": "Fresno State",
-            "Furman": "Furman",
-            "GA S.": "Georgia Southern",
-            "GA Tech": "Georgia Tech",
-            "Ga.": "Georgia",
-            "Ga. S.": "Georgia Southern",
-            "Ga. St.": "Georgia State",
-            "Ga. Tech": "Georgia Tech",
-            "Gard-Webb": "Gardner-Webb",
-            "Gardner Webb": "Gardner-Webb",
-            "Gardner-Webb": "Gardner-Webb",
-            "Geo Mason": "George Mason",
-            "Geo Wshgtn": "George Washington",
-            "George Mason": "George Mason",
-            "George Washington": "George Washington",
-            "Georgetown": "Georgetown",
-            "Grambling": "Grambling State",
-            "Grambling St.": "Grambling State",
-            "Grand Canyon": "Grand Canyon",
-            "Grd Canyon": "Grand Canyon",
-            "Green Bay": "Green Bay",
-            "Hampton": "Hampton",
-            "Hartford": "Hartford",
-            "Harvard": "Harvard",
-            "Hawai'i": "Hawaii",
-            "Hawaii": "Hawaii",
-            "High Point": "High Point",
-            "Hofstra": "Hofstra",
-            "Holy Cross": "Holy Cross",
-            "Houston Christian": "Houston Christian",
-            "Howard": "Howard",
-            "Hsn Christian": "Houston Christian",
-            "IL-Chicago": "Illinois Chicago",
-            "IPFW": "Purdue Fort Wayne",
-            "IU Indy": "IUPUI",
-            "IUPUI": "IUPUI",
-            "Idaho": "Idaho",
-            "Idaho St.": "Idaho State",
-            "Illinois Chicago": "Illinois Chicago",
-            "Illinois St.": "Illinois State",
-            "Illinois-Chicago": "Illinois Chicago",
-            "Incar Word": "Incarnate Word",
-            "Incarnate Word": "Incarnate Word",
-            "Indiana": "Indiana",
-            "Indiana St": "Indiana State",
-            "Indiana St.": "Indiana State",
-            "Iona": "Iona",
-            "Iowa St": "Iowa State",
-            "Iowa St.": "Iowa State",
-            "Jackson St.": "Jackson State",
-            "Jacksonville": "Jacksonville",
-            "Jacksonville St.": "Jacksonville State",
-            "James Mad": "James Madison",
-            "James Madison": "James Madison",
-            "Jksnville St.": "Jacksonville State",
-            "Kansas City": "Kansas City",
-            "Kansas St.": "Kansas State",
-            "Kennesaw St.": "Kennesaw State",
-            "Kent St.": "Kent State",
-            "LA Tech": "Louisiana Tech",
-            "LIU": "LIU Brooklyn",
-            "LMU": "Loyola Marymount",
-            "LSU": "Louisiana State",
-            # Complete the mappings with all team names...
+            "Arizona State Sun Devils": "Arizona State",
+            "Arkansas Razorbacks":"Arkansas",
+            "Arkansas St":"Arkansas State",
+            "Arkansas St.": "Arkansas  State",
+            "Arkansas State Red Wolves": "Arkansas State",
+            "Ark Pine Bl": "Arkansas-Pine Bluff",
+            "Ark.-Pine Bluff":"Arkansas-Pine Bluff",
+            "Arkansas Pine Bluff": "Arkansas Pine-Bluff",
+            "Arkansas-Pine Bluff Golden Lions":"Arkansas-Pine Bluff",
+            "Army West Point":"Army",
+            "Army Black Knights":"Army",
+            "Auburn Tigers":"Auburn",
+            "Austin Peay Governors":"Austin Peay",
+            "Ball St":"Ball State",
+            "Ball St.":"Ball State",
+            "Ball State Cardinals":"Ball State",
+            "Baylor Bears":"Baylor",
+            "Bellarmine Knights":"Bellarmine",
+            "Belmont Bruins":"Belmont",
+            "Beth-Cook":"Bethune-Cookman",
+            "Bethune Cookman":"Bethune-Cookman",
+            "Bethune-Cookman Wildcats":"Bethune-Cookman",
+            "Binghamton Bearcats":"Binghamton",
+            "Binghamton-NY":"Binghamton",
+            "Boise St":"Boise State",
+            "Boise St.":"Boise State",
+            "Boise State Broncos":"Boise State",
+            "Boston Col":"Boston College",
+            "Boston College Eagles":"Boston College",
+            "Boston U":"Boston University",
+            "Boston U.":"Boston University",
+            "Boston University Terriers":"Boston University",
+            "Bowling Green Falcons":"Bowling Green",
+            "Bradley Braves":"Braves",
+            "BYU Cougars":"BYU",
+            "Brown Bears":"Brown",
+            "Bryant Bulldogs":"Bryant",
+            "Bucknell Bison":"Bucknell",
+            "Buffalo Bulls":"Buffalo",
+            "Butler":"Butler Bulldogs",
+            "Cal Poly Mustangs":"Cal Poly",
+            "Cal Poly-SLO":"Cal Poly",
+            "CS Bakersfld":"Cal State Bakersfield",
+            "CS Bakersfield":"Cal State Bakersfield",
+            "CSU Bakersfield":"Cal State Bakersfield",
+            "Cal St. Bakersfield":"Cal State Bakersfield",
+            "Cal State Bakersfield Roadrunners":"Cal State Bakersfield",
+            "CS Fullerton":"Cal State Fullerton",
+            "Cal St. Fullerton":"Cal State Fullerton",
+            "Cal State Fullerton Titans":"Cal State Fullerton",
+            "Cal St Nrdge":"Cal State Northridge",
+            "CSUN":"Cal State Northridge",
+            "Cal State Northridge Matadors":"Cal State Northridge",
+            "CS Northridge":"Cal State Northridge",
+            "California Golden Bears":"California",
+            "Cal Baptist":"California Baptist",
+            "California Baptist Lancers":"California Baptist",
+            "Campbell Fighting Camels":"Campbell",
+            "Canisius Golden Griffins":"Canisius",
+            "Central Ark":"Central Arkansas",
+            "Central Ark.":"Central Arkansas",
+            "Central Arkansas Bears":"Central Arkansas",
+            "Central Conn":"CCSU",
+            "Central Conn. St.":"CCSU",
+            "Central Connecticut":"CCSU",
+            "Central Connecticut Blue Devils":"CCSU",
+            "Central Connecticut St.":"CCSU",
+            "Central Mich":"Central Michigan",
+            "Central Mich.":"Central Michigan",
+            "Central Michigan Chippewas":"Central Michigan",
+            "Col Charlestn":"Charleston",
+            "Col. of Charleston":"Charleston",
+            "Charleston Cougars":"Charleston",
+            "College of Charleston":"Charleston",
+            "Charl South":"Charleston Southern",
+            "Charleston So.":"Charleston Southern",
+            "Charleston Southern Buccaneers":"Charleston Southern",
+            "Charlotte 49ers":"Charlotte",
+            "Chattanooga Mocs":"Chattanooga",
+            "Chicago St":"Chicago State",
+            "Chicago St.":"Chicago State",
+            "Chicago State Cougars":"Chicago State",
+            "Cincinnati Bearcats":"Cincinnati",
+            "Clemson Tigers":"Clemson",
+            "Cleveland St":"Cleveland State",
+            "Cleveland St.":"Cleveland State",
+            "Cleveland State Vikings":"Cleveland State",
+            "Coastal Car":"Coastal Carolina",
+            "Coastal Carolina Chanticleers":"Coastal Carolina",
+            "Colgate Raiders":"Colgate",
+            "Colorado Buffaloes":"Colorado",
+            "Colorado St":"Colorado State",
+            "Colorado St.":"Colorado State",
+            "Colorado State Rams":"Colorado State",
+            "Columbia Lions":"Columbia",
+            "Coppin St":"Coppin State",
+            "Coppin St.":"Coppin State",
+            "Coppin State Eagles":"Coppin State",
+            "Cornell Big Red":"Cornell",
+            "Creighton Bluejays":"Creighton",
+            "Dartmouth Big Green":"Dartmouth",
+            "Davison Wildcats":"Davidson",
+            "Dayton Flyers":"Dayton",
+            "Delaware Blue Hens":"Delaware",
+            "Delaware St":"Delaware State",
+            "Delaware St.":"Delaware State",
+            "Delaware State Hornets":"Delaware State",
+            "Denver Pioneers":"Denver",
+            "DePaul Blue Demons":"DePaul",
+            "Detroit":"Detroit-Mercy",
+            "Detroit Mercy":"Detroit-Mercy",
+            "Detroit Mercy Titans":"Detroit-Mercy",
+            "Drake Bulldogs":"Drake",
+            "Drexel Dragons":"Drexel",
+            "Duke Blue Devils":"Duke",
+            "Duquesne Dukes":"Duquesne",
+            "E Carolina":"East Carolina",
+            "East Carolina Pirates":"East Carolina",
+            "E Tenn St":"ETSU",
+            "East Tennessee St.":"ETSU",
+            "East Tennessee State Buccaneers":"ETSU",
+            "E Illinois":"Eastern Illinois",
+            "Eastern Ill.":"Eastern Illinois",
+            "Eastern Illinois Panthers":"Eastern Illinois",
+            "E Kentucky":"Eastern Kentucky",
+            "Eastern Ky.":"Eastern Kentucky",
+            "Eastern Kentucky Colonels":"Eastern Kentucky",
+            "E Michigan":"Eastern Michigan",
+            "Eastern Mich.":"Eastern Michigan",
+            "Eastern Michigan Eagles":"Eastern Michigan",
+            "E Washingtn":"Eastern Washington",
+            "Eastern Wash.":"Eastern Washington",
+            "Eastern Washington Eagles":"Eastern Washington",
+            "Elon Phoenix":"Elon",
+            "Evansville Purple Aces":"Evansville",
+            "Fairfield Stags":"Fairfield",
+            "F Dickinson":"Fairleigh Dickinson",
+            "FDU":"Fairleigh Dickinson",
+            "Fairleigh Dickinson Knights":"Fairleigh Dickinson",
+            "Florida Gators":"Florida",
+            "Florida A&M Rattlers":"Florida A&M",
+            "Fla Gulf Cst":"Florida Gulf Coast",
+            "FGCU":"Florida Gulf Coast",
+            "Florida Gulf Coast Eagles":"Florida Gulf Coast",
+            "Florida Intl":"Florida International",
+            "FIU":"Florida International",
+            "Florida International Panthers":"Florida International",
+            "Fla. International":"Florida International",
+            "Florida St":"Florida State",
+            "Florida St.":"Florida State",
+            "Florida State Seminoles":"Florida State",
+            "Fordham Rams":"Fordham",
+            "IPFW":"Fort Wayne",
+            "Purdue Fort Wayne":"Fort Wayne",
+            "Purdue Fort Wayne Mastodons":"Fort Wayne",
+            "Fort Wayne(PFW)":"Fort Wayne",
+            "Fresno St":"Fresno State",
+            "Fresno St.":"Fresno State",
+            "Fresno State Bulldogs":"Fresno State",
+            "Furman Paladins":"Furman",
+            "Gard-Webb":"Gardner-Webb",
+            "Gardner Webb":"Gardner-Webb",
+            "Gardner-Webb Runnin' Bulldogs":"Gardner-Webb",
+            "Geo Mason":"George Mason",
+            "George Mason Patriots":"George Mason",
+            "Geo Wshgtn":"George Washington",
+            "George Washington Revolutionaries":"George Washington",
+            "Georgetown Hoyas":"Georgetown",
+            "Georgia Bulldogs":"Georgia",
+            "GA Southern":"Georgia Southern",
+            "Ga. Southern":"Georgia Southern",
+            "Georgia Southern Eagles":"Georgia Southern",
+            "Georgia St":"Georgia State",
+            "Georgia St.":"Georgia State",
+            "Georgia State Panthers":"Georgia State",
+            "GA Tech":"Georgia Tech",
+            "Georgia Tech Yellow Jackets":"Georgia Tech",
+            "Gonzaga Bulldogs":"Goonzaga",
+            "Grambling St":"Grambling State",
+            "Grambling":"Grambling State",
+            "Grambling St.":"Grambling State",
+            "Grambling Tigers":"Grambling State",
+            "Grd Canyon":"Grand Canyon",
+            "Grand Canyon Lopes":"Grand Canyon",
+            "WI-Grn Bay":"Green Bay",
+            "Green Bay Phoenix":"Green Bay",
+            "Hampton Pirates":"Hampton",
+            "Harvard Crimson":"Harvard",
+            "Hawai'i Rainbow Warriors":"Hawaii",
+            "Hawai'i":"Hawaii",
+            "High Point Panthers":"High Point",
+            "Hofstra Pride":"Hofstra",
+            "Holy Cross Crusaders":"Holy Cross",
+            "Houston Cougars":"Houston",
+            "Hsn Christian":"Houston Christian",
+            "Houston Christian Huskies":"Houston Christian",
+            "Howard Bison":"Howard",
+            "Idaho Vandals":"Idaho",
+            "Idaho St":"Idaho State",
+            "Idaho St.":"Idaho State",
+            "Idaho State Bengals":"Idaho State",
+            "Illinois Fighting Illini":"Illinois",
+            "Illinois St":"Illinois State",
+            "Illinois St.":"Illinois State",
+            "Illinois State Redbirds":"Illinois State",
+            "IL-Chicago":"Illinois-Chicago",
+            "Illinois Chicago":"Illinois-Chicago",
+            "UIC Flames":"Illinois-Chicago",
+            "Incar Word":"Incarnate Word",
+            "UIW":"Incarnate Word",
+            "Incarnate Word Cardinals":"Incarnate Word",
+            "Indiana Hoosiers":"Indiana",
+            "Indiana St":"Indiana State",
+            "Indiana St.":"Indiana State",
+            "Indiana State Sycamores":"Indiana State",
+            "Iona Gaels":"Iona",
+            "Iowa Hawkeyes":"Iowa",
+            "Iowa St":"Iowa State",
+            "Iowa St.":"Iowa State",
+            "Iowa State Cyclones":"Iowa State",
+            "IU Indy":"IUPUI",
+            "IU Indianapolis Jaguars":"IUPUI",
+            "Jackson St":"Jackson State",
+            "Jackson St.":"Jackson State",
+            "Jackson State Tigers":"Jackson State",
+            "Jacksonville Dolphins":"Jacksonville",
+            "Jksnville St":"Jacksonville State",
+            "Jacksonville St.":"Jacksonville State",
+            "Jakcsonville State Gamecocks":"Jacksonville State",
+            "James Mad":"James Madison",
+            "James Madison Dukes":"James Madison",
+            "Kansas Jayhawks":"Kansas",
+            "Kansas St":"Kansas State",
+            "Kansas St.":"Kansas State",
+            "Kansas State Wildcats":"Kansas State",
+            "Kennesaw St":"Kennesaw State",
+            "Kennesaw St.":"Kennesaw State",
+            "Kennesaw State Owls":"Kennesaw State",
+            "Kent St":"Kent State",
+            "Kent St.":"Kent State",
+            "Kent State Golden Flashes":"Kent State",
+            "Kentucky Wildcats":"Kentucky",
+            "La Salle Explorers":"La Salle",
+            "Lafayette Leopards":"Lafayette",
+            "Lamar Cardinals":"Lamar",
+            "Lamar University":"Lamar",
+            "Le Moyne Dolphins":"Le Moyne",
+            "Lehigh Mountain Hawks":"Lehigh",
+            "Liberty Flames":"Liberty",
+            "Lindenwood Lions":"Lindenwood",
+            "Lipscomb Bison":"Lipscomb",
+            "AR Lit Rock":"Little Rock",
+            "Little Rock Trojans":"Little Rock",
+            "Lg Beach St":"Long Beach State",
+            "Long Beach St.":"Long Beach State",
+            "Long Beach State Beach":"Long Beach State",
+            "LIU":"Long Island",
+            "Long Island University Sharks":"Long Island",
+            "Long Island U. (LIU)":"Long Island",
+            "Longwood Lancers":"Longwood",
+            "Louisiana Ragin' Cajuns":"Louisiana",
+            "LA Tech":"Louisiana Tech",
+            "Louisiana Tech Bulldogs":"Louisiana Tech",
+            "UL Monroe":"Louisiana-Monroe",
+            "ULM":"Louisiana-Monroe",
+            "Louisiana Monroe":"Louisiana-Monroe",
+            "UL Monroe Warhawks":"Louisiana-Monroe",
+            "Louisville Cardinals":"Louisville",
+            "Loyola-Chi":"Loyola Chicago",
+            "Loyola Chicago Ramblers":"Loyola Chicago",
+            "Loyola Maryland":"Loyola-MD",
+            "Loyola MD":"Loyola-MD",
+            "Loyola Maryland Greyhounds":"Loyola-MD",
+            "Loyola Mymt":"Loyola Marymount",
+            "LMU (CA)":"Loyola Marymount",
+            "Loyola Marymount Lions":"Loyola Marymount",
+            "LSU Tigers":"LSU",
+            "Maine Black Bears":"Maine",
+            "Manhattan Jaspers":"Manhattan",
+            "Marist Red Foxes":"Marist",
+            "Marquette Golden Eagles":"Marquette",
+            "Marshall Thundering Herd":"Marshall",
+            "Maryland Terrapins":"Maryland",
+            "Maryland ES":"UMES",
+            "Maryland Eastern Shore":"UMES",
+            "Maryland Eastern Shore Hawks":"UMES",
+            "U Mass":"Massachusetts",
+            "Massachusetts Minutemen":"Massachusetts",
+            "McNeese St":"McNeese State",
+            "McNeese":"McNeese State",
+            "McNeese Cowboys":"McNeese State",
+            "Memphis Tigers":"Memphis",
+            "Mercer Bears":"Mercer",
+            "Merrimack Warriors":"Merrimack",
+            "Miami (FL)":"Miami FL",
+            "Miami (OH)": "Miami OH",
+            "Miami Hurricanes":"Miami FL",
+            "Miami (OH) RedHawks":"Miami OH",
+            "Michigan Wolverines":"Michigan",
+            "Michigan St":"Michigan State",
+            "Michigan St.":"Michigan State",
+            "Michigan State Spartans":"Michigan State",
+            "Middle Tenn":"Middle Tennessee State",
+            "Middle Tenn.":"Middle Tennessee State",
+            "Middle Tennessee":"Middle Tennessee State",
+            "Middle Tennessee Blue Raiders":"Middle Tennessee State",
+            "Milwaukee Panthers":"Milwaukee",
+            "Minnesota Golden Gophers":"Minnesota",
+            "Miss State":"Mississippi State",
+            "Mississippi St.":"Mississippi State",
+            "Mississippi State Bulldogs":"Mississippi State",
+            "Miss Val St":"Mississippi Valley State",
+            "Mississippi Val.":"Mississippi Valley State",
+            "Mississippi Valley St.":"Mississippi Valley State",
+            "Mississippi Valley State Delta Devils":"Mississippi Valley State",
+            "Missouri Tigers":"Missouri",
+            "Missouri St":"Missouri State",
+            "Missouri St.":"Missouri State",
+            "Missouri State Bears":"Missouri State",
+            "Monmouth Hawks":"Monmouth",
+            "Montana Grizzlies":"Montana",
+            "Montana St":"Montana State",
+            "Montana St.":"Montana State",
+            "Montana State Bobcats":"Montana State",
+            "Morehead St":"Morehead State",
+            "Morehead St.":"Morehead State",
+            "Morehead State Eagles":"Morehead State",
+            "Morgan St":"Morgan State",
+            "Morgan St.":"Morgan State",
+            "Morgan State Bears":"Morgan State",
+            "Mt St Marys":"Mount St. Mary's",
+            "Mount St. Mary's Mountaineers":"Mount St. Mary's",
+            "Murray St":"Murray State",
+            "Murray St.":"Murray State",
+            "Murray State Racers":"Murray State",
+            "NJIT Highlanders":"NJIT",
+            "Navy Midshipmen":"Navy",
+            "N.C. State":"NC State",
+            "NC State Wolfpack":"NC State",
+            "Nebraska Cornhuskers":"Nebraska",
+            "Nevada Wolfpack":"Nevada",
+            "N Hampshire":"New Hampshire",
+            "New Hampshire Wildcats":"New Hampshire",
+            "New Mexico Lobos":"New Mexico",
+            "N Mex State":"New Mexico State",
+            "New Mexico St.":"New Mexico State",
+            "New Mexico State Aggies":"New Mexico State",
+            "New Orleans Privateers":"New Orleans",
+            "Niagara Purple Eagles":"Niagara",
+            "Nicholls":"Nicholls State",
+            "Nicholls Colonels":"Nicholls State",
+            "Norfolk St":"Norfolk State",
+            "Norfolk St.":"Norfolk State",
+            "Norfolk State Spartans":"Norfolk State",
+            "N Alabama":"North Alabama",
+            "North Ala.":"North Alabama",
+            "North Alabama Lions":"North Alabama",
+            "North Carolina Tar Heels":"North Carolina",
+            "NC A&T":"North Carolina A&T",
+            "N.C. A&T":"North Carolina A&T",
+            "North Carolina A&T Aggies":"North Carolina A&T",
+            "NC Central":"North Carolina Central",
+            "N.C. Central":"North Carolina Central",
+            "North Carolina Central Eagles":"North Carolina Central",
+            "North Dakota Fighting Hawks":"North Dakota",
+            "N Dakota St":"North Dakota State",
+            "North Dakota St.":"North Dakota State",
+            "North Dakota State Bison":"North Dakota State",
+            "N Florida":"North Florida",
+            "North Florida Ospreys":"North Florida",
+            "North Texas Mean Green":"North Texas",
+            "Northeastrn":"Northeastern",
+            "Northeastern Huskies":"Northeastern",
+            "N Arizona":" Northern Arizona",
+            "Northern Ariz.":"Northern Arizona",
+            "Northern Arizona Lumberjacks":"Northern Arizona",
+            "N Colorado":"Northern Colorado",
+            "Northern Colo.":"Northern Colorado",
+            "Northern Colorado Bears":"Northern Colorado",
+            "N Illinois":"Northern Illinois",
+            "NIU":"Northern Illinois",
+            "Northern Illinois Huskies":"Northern Illinois",
+            "N Iowa":"Northern Iowa",
+            "UNI":"Northern Iowa",
+            "Northern Iowa Panthers":"Northern Iowa",
+            "N Kentucky":"Northern Kentucky",
+            "Northern Ky.":"Northern Kentucky",
+            "Northern Kentucky Norse":"Northern Kentucky",
+            "Northwestern Wildcats":"Northwestern",
+            "NW State":"Northwestern State",
+            "Northwestern St.":"Northwestern State",
+            "Northwestern State Demons":"Northwestern State",
+            "Notre Dame Fighting Irish":"Notre Dame",
+            "Oakland Golden Grizzlies":"Oakland",
+            "Ohio Bobcats":"Ohio",
+            "Ohio St":"Ohio State",
+            "Ohio St.":"Ohio State",
+            "Ohio State Buckeyes":"Ohio State Buckeyes",
+            "Oklahoma Sooners":"Oklahoma",
+            "Oklahoma St":"Oklahoma State",
+            "Oklahoma St.":"Oklahoma State",
+            "Oklahoma State Cowboys":"Oklahoma State",
+            "Old Dominion Monarchs":"Old Dominion",
+            "Ole Miss Rebels":"Ole Miss",
+            "Mississippi":"Ole Miss",
+            "Neb Omaha":"Omaha",
+            "Nebraska Omaha":"Omaha",
+            "Omaha Mavericks":"Omaha",
+            "Oral Roberts Golden Eagles":"Oral Roberts",
+            "Oregon Ducks":"Oregon",
+            "Oregon St":"Oregon State",
+            "Oregon St.":"Oregon State",
+            "Oregon State Beavers":"Oregon State",
+            "Pacific Tigers":"Pacific",
+            "Penn St":"Penn State",
+            "Penn St.":"Penn State",
+            "Penn State Nittany Lions":"Penn State",
+            "Pennsylvania Quakers":"Penn",
+            "U Penn":"Penn",
+            "Pepperdine Waves":"Pepperdine",
+            "Pittsburgh Panthers":"Pittsburgh",
+            "Portland Pilots":"Portland",
+            "Portland St":"Portland State",
+            "Portland St.":"Portland State",
+            "Portland State Vikings":"Portland State",
+            "Prairie View A&M":"Prairie View",
+            "Prairie View A&M Panthers":"Prairie View",
+            "Presbyterian":"Presbyterian Blue Hose",
+            "Princeton Tigers":"Princeton",
+            "Providence Friars":"Providence",
+            "Purdue Boilermakers":"Purdue",
+            "Queens University Royals":"Queens",
+            "Quinnipiac Bobcats":"Quinnipiac",
+            "Radford Highlanders":"Radford",
+            "Rhode Island Rams":"Rhode Island",
+            "Rice Owls":"Rice",
+            "Richmond Spiders":"Richmond",
+            "Rider Broncs":"Rider",
+            "Rob Morris":"Robert Morris",
+            "Robert Morris Colonials":"Robert Morris",
+            "Rutgers Scarlet Knights":"Rutgers",
+            "Sac State":"Sacramento State",
+            "Sacramento St.":"Sacramento State",
+            "Sacramento State Hornets":"Sacramento State",
+            "Sacred Hrt":"Sacred Heart",
+            "Sacred Heart Pioneers":"Sacred Heart",
+            "St Josephs":"Saint Joseph's",
+            "Saint Joseph's Hawks":"Saint Joseph's",
+            "Saint Louis Billikens":"Saint Louis",
+            "St Marys":"Saint Mary's",
+            "Saint Mary's (CA)":"Saint Mary's",
+            "Saint Mary's Gaels":"Saint Mary's",
+            "St Peters":"Saint Peter's",
+            "Saint Peter's Peacocks":"Saint Peter's",
+            "Sam Hous St":"Sam Houston State",
+            "Sam Houston":"Sam Houston State",
+            "Sam Houston St.":"Sam Houston State",
+            "Sam Houston Bearkats":"Sam Houston State",
+            "Samford Bulldogs":"Samford",
+            "San Diego Toreros":"San Diego",
+            "San Diego St":"San Diego State",
+            "San Diego St.":"San Diego State",
+            "San Diego State Aztecs":"San Diego State",
+            "San Francisco Dons":"San Francisco",
+            "San Jose St":"San Jose State",
+            "San Jose St.":"San Jose State",
+            "San Jose State Spartans":"San Jose State",
+            "Santa Clara Broncos":"Santa Clara",
+            "Seattle U":"Seattle",
+            "Seattle U Redhawks":"Seattle",
+            "Seton Hall Pirates":"Seton Hall",
+            "Siena Saints":"Siena",
+            "SIU Edward":"SIUE",
+            "SIU Edwardsville Cougars":"SIUE",
+            "S Alabama":"South Alabama",
+            "South Alabama Jaguars":"South Alabama",
+            "S Carolina":"South Carolina",
+            "South Carolina Gamecocks":"South Carolina",
+            "S Car State":"South Carolina State",
+            "South Carolina St.":"South Carolina State",
+            "South Carolina State Bulldogs":"South Carolina State",
+            "South Dakota Coyotes":"South Dakota",
+            "S Dakota St":"South Dakota State",
+            "South Dakota St.":"South Dakota State",
+            "South Dakota State Jackrabbits":"South Dakota State",
+            "S Florida":"South Florida",
+            "South Fla.":"South Florida",
+            "South Florida Bulls":"South Florida",
+            "SE Missouri":"SEMO",
+            "Southeast Mo. St.":"SEMO",
+            "Southeast Missouri":"SEMO",
+            "Southeast Missouri State Redhawks":"SEMO",
+            "SE Louisiana":"SELA",
+            "Southeastern La.":"SELA",
+            "Southeastern Louisiana":"SELA",
+            "SE Louisiana Lions":"SELA",
+            "Southern U.":"Southern",
+            "Southern Jaguars":"Southern",
+            "S Illinois":"Southern Illinois",
+            "Southern Ill.":"Southern Illinois",
+            "Southern Illinois Salukis":"Southern Illinois",
+            "S Indiana":"Southern Indiana",
+            "Southern Ind.":"Southern Indiana",
+            "Southern Indiana Screaming Eagles":"Southern Indiana",
+            "S Methodist":"SMU",
+            "SMU Mustangs":"SMU",
+            "S Mississippi":"Southern Mississippi",
+            "Southern Miss.":"Southern Mississippi",
+            "Southern Miss Golden Eagles":"Southern Mississippi",
+            "Southern Miss":"Southern Mississippi",
+            "S Utah":"Southern Utah",
+            "Southern Utah Thunderbirds":"Southern Utah",
+            "St. Bonavent":"St. Bonaventure",
+            "St. Bonaventure Bonnies":"St. Bonaventure",
+            "St Fran":"St. Francis",
+            "Saint Franics (PA)":"St. Francis",
+            "Saint Francis":"St. Francis",
+            "St. Francis (PA) Red Flash":"St. Francis",
+            "St Johns":"St. John's",
+            "St. John's (NY)":"St. John's",
+            "St. John's Red Storm":"St. John's",
+            "St. Thomas (MN)":"St. Thomas",
+            "St. Thomas-Minnesota Tommies":"St. Thomas",
+            "Stanford Cardinal":"Stanford",
+            "Ste F Austin":"Stephen F. Austin",
+            "SFA":"Stephen F. Austin",
+            "Stephen F. Austin Lumberjacks":"Stephen F. Austin",
+            "Stetson Hatters":"Stetson",
+            "Stonehill Skyhawks":"Stonehill",
+            "Stony Brook Seawolves":"Stony Brook",
+            "Syracuse Orange":"Syracuse",
+            "Tarleton St":"Tarleton State",
+            "Tarleton St.":"Tarleton State",
+            "Tarleton State Texans":"Tarleton State",
+            "TX Christian":"TCU",
+            "TCU Horned Frogs":"TCU",
+            "Temple Owls":"Temple",
+            "Tennessee Volunteers":"Tennessee",
+            "TN State":"Tennessee State",
+            "TN Tech":"Tennessee Tech",
+            "Tennessee St.":"Tennessee State",
+            "Tennessee State Tigers":"Tennessee State",
+            "Tennessee Tech Golden Eagles":"Tennessee Tech",
+            "TN Martin":"UT Martin",
+            "Tennessee Martin":"UT Martin",
+            "UT Martin Skyhawks":"UT Martin",
+            "Texas Longhorns":"Texas",
+            "Texas A&M Aggies":"Texas A&M",
+            "TX A&M-Com":"Texas A&M Commerce",
+            "Tex. A&M-Commerce":"Texas A&M Commerce",
+            "Texas A&M-Commerce Lions":"Texas A&M Commerce",
+            "TX A&M-CC":"Texas A&M-CC",
+            "Texas A&M Corpus Chris":"Texas A&M-CC",
+            "Texas A&M-Corpus Christi Islanders":"Texas A&M-CC",
+            "A&M-Corpus Christi":"Texas A&M-CC",
+            "TX Southern":"Texas Southern",
+            "Texas Southern Tigers":"Texas Southern",
+            "Texas St":"Texas State",
+            "Texas St.":"Texas State",
+            "Texas State Bobcats":"Texas State",
+            "Texas Tech Red Raiders":"Texas Tech",
+            "TX-Arlington":"UT Arlington",
+            "UT Arlington Mavericks":"UT Arlington",
+            "UT-Pan Am":"UTRGV",
+            "UT Rio Grande Valley":"UTRGV",
+            "UT Rio Grande Valley Vaqueros":"UTRGV",
+            "UTSA Roadrunners":"UTSA",
+            "The Citadel":"Citadel",
+            "The Citadel Bulldogs":"Citadel",
+            "Toledo Rockets":"Toledo",
+            "Towson Tigers":"Towson",
+            "Troy Trojans":"Troy",
+            "Tulane Green Wave":"Tulane",
+            "Tulsa Golden Hurricane":"Tulsa",
+            "UAB Blazers":"UAB",
+            "UC Davis Aggies":"UC Davis",
+            "UC Irvine Anteaters":"UC Irvine",
+            "UC Riverside Highlanders":"UC Riverside",
+            "UC San Diego":"UCSD",
+            "UC San Diego Tritons":"UCSD",
+            "UC Santa Barbara":"UCSB",
+            "UC Santa Barbara Gauchos":"UCSB",
+            "UCF Knights":"UCF",
+            "UCLA Bruins":"UCLA",
+            "Connecticut":"UConn",
+            "UConn Huskies":"UConn",
+            "Mass Lowell":"UMass Lowell",
+            "UMass Lowell River Hawks":"UMass Lowell",
+            
+            
+            
+            
+                                    
+            
+            
+            
+            
+            
+            
+            
+                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                        
+            
+            
+            
+            
+                        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
+            
+            
+            
+            
+            
+        
         }
-
-        # Word standardizations to handle variations in naming conventions
-        self.word_standardization = {
-            "University": "",
-            "College": "",
-            "State": "St.",
-            "-": " ",
-
-            "Arkansas": "AR",
-            "Little": "Lit",
-            "Rock": "Rock",
-            "Christian": "Christian",
-            "University": "",
-            "Point": "Pt",
-            "Metropolitan": "Metro",
-            "International": "Intl",
-            "A&M": "A&M",
-            "Saint": "St.",
-            "Northern": "N.",
-            "Southern": "S.",
-            "Eastern": "E.",
-            "Western": "W.",
-            "Central": "C.",
-            "Florida": "Fla.",
-            "Carolina": "Car.",
-            "Alabama": "Ala.",
-            "Mississippi": "Miss.",
-            "Georgia": "Ga.",
-            "Texas": "TX",
-        }
-
-        # Patterns for specific replacements
-        self.patterns = {
-            r'St\.?$': 'St.',  # Standardize State abbreviation
-            r'([A-Z])\s*&\s*([A-Z])': r'\1&\2',  # Standardize A&M format
-            r'\s+': ' ',  # Standardize spaces
-            r'(\w+)[\s-]NY$': r'\1',  # Remove -NY suffix
-            r'West Point$': '',  # Remove West Point from Army
-            r'[\s-]Metro$': ' Metropolitan',  # Standardize Metropolitan
-            r'Lit[\s-]Rock': 'Little Rock',  # Standardize
-            r'(\w+)\s*\(\s*(\w+)\s*\)': r'\1 \2',  # Remove parentheses
-            r'[()]': '',  # Remove remaining parentheses
-            r'\s*-\s*': '-',  # Standardize hyphens
-        }
-
-        # Build reverse mappings for lookups
-        self.build_reverse_mappings()
-
-    def build_reverse_mappings(self) -> None:
-        """Build reverse mappings for team name lookups."""
-        self.reverse_mappings = {}
-        for original, standardized in self.name_mappings.items():
-            if standardized not in self.reverse_mappings:
-                self.reverse_mappings[standardized] = set()
-            self.reverse_mappings[standardized].add(original)
-            # Add variations with common substitutions
-            for pattern, replacement in self.word_standardization.items():
-                variant = original.replace(pattern, replacement).strip()
-                if variant != original:
-                    self.reverse_mappings[standardized].add(variant)
 
     def clean_name(self, name: str) -> str:
         """
-        Clean and standardize a team name.
+        Clean and standardize a team name using only direct mappings.
         
         Args:
-            name: Raw team name string
+            name (str): The team name to clean
             
         Returns:
-            Standardized team name string
+            str: The standardized team name if found in mappings, otherwise original name
         """
         if not name:
             return name
-
-        # Initial cleanup
-        name = name.strip()
-
-        # Direct mapping lookup
-        if name in self.name_mappings:
-            return self.name_mappings[name]
-
-        # Remove anything in parentheses unless it's a state identifier
-        name = re.sub(r'\s*\([^)]*\)', '', name)
-
-        # Apply patterns
-        for pattern, replacement in self.patterns.items():
-            name = re.sub(pattern, replacement, name)
-
-        # Apply word standardization
-        words = name.split()
-        standardized_words = []
-        i = 0
-        while i < len(words):
-            # Try to match multiple word phrases first
-            matched = False
-            for j in range(min(4, len(words) - i + 1), 0, -1):
-                phrase = ' '.join(words[i:i+j])
-                if phrase in self.word_standardization:
-                    replacement = self.word_standardization[phrase]
-                    if replacement:
-                        standardized_words.append(replacement)
-                    i += j
-                    matched = True
-                    break
-            if not matched:
-                standardized_words.append(words[i])
-                i += 1
-
-        name = ' '.join(w for w in standardized_words if w)
-
-        # Clean up extra spaces and standardize St./State
-        name = re.sub(r'\s+', ' ', name).strip()
-        if name.endswith(" St"):
-            name = name.replace(" St", " St.")
-
-        return name
-
-    def get_variations(self, name: str) -> Set[str]:
-        """
-        Generate common variations of a team name.
-        
-        Args:
-            name: Team name string
             
-        Returns:
-            Set of possible variations of the team name
-        """
-        variations = {name}
-
-        # Add standard variations
-        clean_name = self.clean_name(name)
-        variations.add(clean_name)
-
-        # Add reverse mappings if available
-        if clean_name in self.reverse_mappings:
-            variations.update(self.reverse_mappings[clean_name])
-
-        # Generate additional variations
-        for variant in list(variations):
-            # Add version with/without periods
-            if "." in variant:
-                variations.add(variant.replace(".", ""))
-            else:
-                name_with_periods = variant
-                for abbrev in ["St", "Univ"]:
-                    if name_with_periods.endswith(f" {abbrev}"):
-                        name_with_periods = name_with_periods.replace(
-                            f" {abbrev}", f" {abbrev}.")
-                variations.add(name_with_periods)
-
-            # Add versions with different separators
-            if "-" in variant:
-                variations.add(variant.replace("-", " "))
-            if " " in variant:
-                variations.add(variant.replace(" ", "-"))
-
-        return variations
-
-    def find_closest_match(self, name: str, candidates: List[str], threshold: float = 0.85) -> Optional[str]:
-        """
-        Find the closest matching team name from a list of candidates.
-        
-        Args:
-            name: Team name to match
-            candidates: List of possible team names to match against
-            threshold: Minimum similarity score to consider a match
-            
-        Returns:
-            Best matching team name or None if no good match found
-        """
-        clean_name = self.clean_name(name)
-        variations = self.get_variations(clean_name)
-
-        best_match = None
-        best_score = 0
-
-        for candidate in candidates:
-            candidate_clean = self.clean_name(candidate)
-            candidate_variations = self.get_variations(candidate_clean)
-
-            for var1 in variations:
-                for var2 in candidate_variations:
-                    score = SequenceMatcher(
-                        None, var1.lower(), var2.lower()).ratio()
-                    if score > best_score:
-                        best_score = score
-                        best_match = candidate
-
-        return best_match if best_score >= threshold else None
-
-    def are_same_team(self, name1: str, name2: str) -> bool:
-        """
-        Check if two team names refer to the same team.
-        
-        Args:
-            name1: First team name
-            name2: Second team name
-            
-        Returns:
-            True if names likely refer to the same team, False otherwise
-        """
-        variations1 = self.get_variations(self.clean_name(name1))
-        variations2 = self.get_variations(self.clean_name(name2))
-        return bool(variations1.intersection(variations2))
-
-
-def main():
-    """Test the team name standardizer with some examples."""
-    standardizer = EnhancedTeamNameStandardizer()
-
-    test_names = [
-        "North Carolina State",
-        "NC State",
-        "N.C. State",
-        "North Carolina St",
-        "Michigan State University",
-        "Michigan St.",
-        "Michigan St",
-        "UNC-Wilmington",
-        "UNC Wilmington",
-        "North Carolina-Wilmington",
-        "Saint Mary's (CA)",
-        "Saint Mary's California",
-        "St. Mary's",
-        "Texas A&M Corpus Christi",
-        "Texas A&M-Corpus Christi",
-        "Texas A&M CC"
-    ]
-
-    print("Testing team name standardization:")
-    for name in test_names:
-        standardized = standardizer.clean_name(name)
-        print(f"{name:40} -> {standardized}")
-
-    print("\nTesting variation generation:")
-    variations = standardizer.get_variations("North Carolina State")
-    print("Variations for 'North Carolina State':")
-    for var in sorted(variations):
-        print(f"  {var}")
-
-    print("\nTesting team name matching:")
-    pairs = [
-        ("Michigan State", "Michigan St."),
-        ("UNC-Wilmington", "North Carolina Wilmington"),
-        ("Saint Mary's (CA)", "St. Mary's California"),
-        ("Texas A&M CC", "Texas A&M-Corpus Christi")
-    ]
-
-
-
-if __name__ == "__main__":
-    main()
+        # Clean whitespace and check mappings
+        cleaned = ' '.join(name.strip().split())
+        return self.name_mappings.get(cleaned, cleaned)

@@ -34,60 +34,7 @@ class BasketballRankingsParser:
             'AAC', 'MWC', 'WCC', 'MVC', 'CAA', 'CUSA', 'MAC',
             'SUN BELT', 'WAC'
         }
-        
-        # ESPN-specific team mappings
-        self.espn_mappings = {
-            "Houston Cougars": "Houston",
-            "UConn Huskies": "UConn",
-            "Purdue Boilermakers": "Purdue",
-            "Auburn Tigers": "Auburn",
-            "Iowa State Cyclones": "Iowa St",
-            "Arizona Wildcats": "Arizona",
-            "Tennessee Volunteers": "Tennessee",
-            "Duke Blue Devils": "Duke",
-            "North Carolina Tar Heels": "N Carolina",
-            "Creighton Bluejays": "Creighton",
-            "Illinois Fighting Illini": "Illinois",
-            "Alabama Crimson Tide": "Alabama",
-            "Marquette Golden Eagles": "Marquette",
-            "Baylor Bears": "Baylor",
-            "Gonzaga Bulldogs": "Gonzaga",
-            "Saint Mary's Gaels": "St Marys",
-            "Michigan State Spartans": "Michigan St",
-            "BYU Cougars": "BYU",
-            "Wisconsin Badgers": "Wisconsin",
-            "Clemson Tigers": "Clemson",
-            "Kansas Jayhawks": "Kansas",
-            "Texas Longhorns": "Texas",
-            "St. John's Red Storm": "St Johns",
-            "Kentucky Wildcats": "Kentucky",
-            "Florida Gators": "Florida",
-            "Texas Tech Red Raiders": "Texas Tech",
-            "Pittsburgh Panthers": "Pittsburgh",
-            "Texas A&M Aggies": "Texas A&M",
-            "Dayton Flyers": "Dayton",
-            "Cincinnati Bearcats": "Cincinnati",
-            "Wake Forest Demon Deacons": "Wake Forest",
-            "Villanova Wildcats": "Villanova",
-            "TCU Horned Frogs": "TX Christian",
-            "Mississippi State Bulldogs": "Miss State",
-            "San Diego State Aztecs": "San Diego St",
-            "Florida Atlantic Owls": "Fla Atlantic",
-            "Nebraska Cornhuskers": "Nebraska",
-            "Oklahoma Sooners": "Oklahoma",
-            "Northwestern Wildcats": "Northwestern",
-            "Indiana State Sycamores": "Indiana St",
-            "NC State Wolfpack": "NC State",
-            "Washington State Cougars": "Wash State",
-            "Ohio State Buckeyes": "Ohio St",
-            "Virginia Tech Hokies": "VA Tech",
-            "Colorado Buffaloes": "Colorado",
-            "Providence Friars": "Providence",
-            "Iowa Hawkeyes": "Iowa",
-            "Boise State Broncos": "Boise St",
-            "New Mexico Lobos": "New Mexico",
-            "Utah Utes": "Utah"
-        }
+
 
     def is_conference(self, name: str) -> bool:
         """Check if the given name is a conference name."""
@@ -244,23 +191,57 @@ class BasketballRankingsParser:
         return pd.DataFrame(sos_data, columns=["Team", "SOS Rank", "SOS Rating"])
 
     def get_espn_rankings(self) -> pd.DataFrame:
-        """Get ESPN BPI rankings with normalized team names."""
+
         try:
-            # Read the saved ESPN CSV
-            espn_df = pd.read_csv('results/espn.csv')
+            options = webdriver.ChromeOptions()
+            options.add_argument("--headless")
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
             
-            # Normalize the team names using the ESPN mappings
-            espn_df['Team'] = espn_df['Team'].map(self.espn_mappings)
+            # Navigate to ESPN BPI page
+            espn_url = "https://www.espn.com/mens-college-basketball/bpi"
+            driver.get(espn_url)
             
-            # Remove any rows where team name mapping wasn't found
-            espn_df = espn_df.dropna(subset=['Team'])
+            # Click "Load More" until all teams are loaded
+            while True:
+                try:
+                    show_more_button = driver.find_element(By.CLASS_NAME, "loadMore__link")
+                    show_more_button.click()
+                    time.sleep(2)  # Wait for more content to load
+                except NoSuchElementException:
+                    break
             
-            return espn_df
+            # Parse with BeautifulSoup
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            driver.quit()
+            
+            # Initialize data collection
+            team_names = []
+            bpi_data = []
+            
+            # Extract team names and BPI data
+            for row in soup.find_all('tr'):
+                cols = row.find_all('td')
+                if len(cols) == 2:  # Rows with team names
+                    team_name = self.standardize_team_name(cols[0].text.strip())
+                    team_names.append(team_name)
+                elif len(cols) >= 7:  # Rows with BPI data
+                    bpi_rating = cols[1].text.strip()
+                    bpi_rank = cols[2].text.strip()
+                    bpi_data.append([bpi_rating, bpi_rank])
+            
+            # Combine data into DataFrame
+            if len(team_names) == len(bpi_data):
+                espn_data = [
+                    [team_names[i]] + bpi_data[i][:] for i in range(len(team_names))
+                ]
+                espn_df = pd.DataFrame(espn_data, columns=["Team", "BPI Rating", "BPI Rank"])
+                return espn_df.sort_values('BPI Rank').reset_index(drop=True)
+                
+            return pd.DataFrame(columns=["Team", "BPI Rating", "BPI Rank"])
             
         except Exception as e:
-            print(f"Error processing ESPN rankings: {str(e)}")
+            print(f"Error getting ESPN rankings: {str(e)}")
             return pd.DataFrame(columns=["Team", "BPI Rating", "BPI Rank"])
-
 def main():
     parser = BasketballRankingsParser()
     
