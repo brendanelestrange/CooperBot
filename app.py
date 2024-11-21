@@ -4,7 +4,7 @@ from main import BasketballRankingsParser
 
 app = Flask(__name__)
 
-# Initialize parser
+
 parser = BasketballRankingsParser()
 
 @app.route('/')

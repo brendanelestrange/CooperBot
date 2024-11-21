@@ -13,38 +13,37 @@ options = webdriver.ChromeOptions()
 options.add_argument("--headless")  # Optional: Run in headless mode
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-# Define the URL
 espn_url = "https://www.espn.com/mens-college-basketball/bpi"
 driver.get(espn_url)
 
-# Attempt to click "Load More" button until all teams are loaded
+
 while True:
     try:
-        # Find the "Show More" button using its class
+        
         show_more_button = driver.find_element(By.CLASS_NAME, "loadMore__link")
         show_more_button.click()
-        time.sleep(2)  # Wait for more content to load
+        time.sleep(2)  
     except NoSuchElementException:
-        # If "Show More" button is not found, we assume all content is loaded
+    
         break
 
-# Parse the fully loaded page with BeautifulSoup
-soup = BeautifulSoup(driver.page_source, 'html.parser')
-driver.quit()  # Close the browser
 
-# Initialize lists for team names and BPI data
+soup = BeautifulSoup(driver.page_source, 'html.parser')
+driver.quit()  
+
+
 team_names = []
 bpi_data = []
 
-# Loop through all rows to capture all teams and data
+
 for row in soup.find_all('tr'):
     cols = row.find_all('td')
-    if len(cols) == 2:  # Rows with team names
+    if len(cols) == 2:  
         team_full_name = cols[0].text.strip()
         team_names.append(team_full_name)
-    elif len(cols) >= 7:  # Rows with BPI data          # Win-Loss record
-        bpi_rating = cols[1].text.strip()      # BPI Rating
-        bpi_rank = cols[2].text.strip()        # BPI Rank
+    elif len(cols) >= 7:  
+        bpi_rating = cols[1].text.strip()      
+        bpi_rank = cols[2].text.strip()        
         bpi_data.append([bpi_rating, bpi_rank])
 
 # Check and verify data length
