@@ -1,363 +1,365 @@
 Team,BPI Rating,BPI Rank
-Houston Cougars,23.0,1
-UConn Huskies,22.7,2
-Purdue Boilermakers,20.3,3
-Auburn Tigers,18.5,4
-Iowa State Cyclones,18.2,5
-Arizona Wildcats,18.2,6
-Tennessee Volunteers,18.1,7
-Duke Blue Devils,17.9,8
-North Carolina Tar Heels,17.0,9
-Creighton Bluejays,16.8,10
-Illinois Fighting Illini,16.3,11
-Alabama Crimson Tide,16.2,12
-Marquette Golden Eagles,15.3,13
-Baylor Bears,15.1,14
-Gonzaga Bulldogs,14.9,15
-Saint Mary's Gaels,14.0,16
-Michigan State Spartans,13.8,17
-BYU Cougars,13.5,18
-Wisconsin Badgers,13.3,19
-Clemson Tigers,12.9,20
-Kansas Jayhawks,12.7,21
-Texas Longhorns,12.7,22
-St. John's Red Storm,12.7,23
-Kentucky Wildcats,12.6,24
-Florida Gators,12.1,25
-Texas Tech Red Raiders,11.7,26
-Pittsburgh Panthers,11.6,27
-Texas A&M Aggies,11.5,28
-Dayton Flyers,11.5,29
-Cincinnati Bearcats,11.5,30
-Wake Forest Demon Deacons,11.5,31
-Villanova Wildcats,11.4,32
-TCU Horned Frogs,11.4,33
-Mississippi State Bulldogs,11.1,34
-San Diego State Aztecs,11.1,35
-Florida Atlantic Owls,11.0,36
-Nebraska Cornhuskers,10.7,37
-Oklahoma Sooners,10.6,38
-Northwestern Wildcats,10.3,39
-Indiana State Sycamores,10.2,40
-NC State Wolfpack,10.1,41
-Washington State Cougars,10.1,42
-Ohio State Buckeyes,9.9,43
-Virginia Tech Hokies,9.8,44
-Colorado Buffaloes,9.7,45
-Providence Friars,9.4,46
-Iowa Hawkeyes,9.3,47
-Boise State Broncos,9.2,48
-New Mexico Lobos,9.1,49
-Utah Utes,9.1,50
-Xavier Musketeers,9.1,51
-Grand Canyon Lopes,9.0,52
-Seton Hall Pirates,9.0,53
-James Madison Dukes,8.9,54
-Oregon Ducks,8.9,55
-Drake Bulldogs,8.8,56
-Nevada Wolf Pack,8.8,57
-UCF Knights,8.7,58
-South Carolina Gamecocks,8.6,59
-McNeese Cowboys,8.5,60
-San Francisco Dons,8.5,61
-Kansas State Wildcats,8.4,62
-Virginia Cavaliers,8.4,63
-Washington Huskies,8.2,64
-Princeton Tigers,8.2,65
-Maryland Terrapins,8.2,66
-Colorado State Rams,7.9,67
-UNLV Rebels,7.6,68
-Yale Bulldogs,7.6,69
-Utah State Aggies,7.4,70
-Bradley Braves,7.3,71
-VCU Rams,7.2,72
-Boston College Eagles,7.1,73
-SMU Mustangs,7.1,74
-Butler Bulldogs,7.1,75
-App State Mountaineers,7.1,76
-Memphis Tigers,6.9,77
-Florida State Seminoles,6.7,78
-USC Trojans,6.6,79
-Miami Hurricanes,6.6,80
-Georgia Bulldogs,6.6,81
-UC Irvine Anteaters,6.5,82
-Richmond Spiders,6.5,83
-Penn State Nittany Lions,6.4,84
-Minnesota Golden Gophers,6.2,85
-Vermont Catamounts,6.2,86
-Saint Joseph's Hawks,6.2,87
-North Texas Mean Green,6.0,88
-LSU Tigers,6.0,89
-Duquesne Dukes,5.9,90
-South Florida Bulls,5.9,91
-Massachusetts Minutemen,5.8,92
-Ole Miss Rebels,5.7,93
-Louisiana Tech Bulldogs,5.7,94
-Samford Bulldogs,5.7,95
-St. Bonaventure Bonnies,5.6,96
-Syracuse Orange,5.5,97
-Rutgers Scarlet Knights,5.5,98
-Charleston Cougars,5.5,99
-Indiana Hoosiers,5.4,100
-Hofstra Pride,5.3,101
-Loyola Chicago Ramblers,5.2,102
-Cornell Big Red,5.1,103
-Morehead State Eagles,5.0,104
-George Mason Patriots,5.0,105
-Seattle U Redhawks,4.8,106
-UNC Wilmington Seahawks,4.7,107
-UCLA Bruins,4.6,108
-Drexel Dragons,4.5,109
-Stanford Cardinal,4.5,110
-Akron Zips,4.4,111
-Liberty Flames,4.1,112
-High Point Panthers,4.1,113
-Arkansas Razorbacks,3.9,114
-Colgate Raiders,3.8,115
-UAB Blazers,3.7,116
-Charlotte 49ers,3.4,117
-Oklahoma State Cowboys,3.3,118
-Ohio Bobcats,3.2,119
-Toledo Rockets,3.1,120
-UMass Lowell River Hawks,3.1,121
-Northern Iowa Panthers,3.0,122
-Southern Illinois Salukis,2.9,123
-Santa Clara Broncos,2.8,124
-Towson Tigers,2.7,125
-Troy Trojans,2.7,126
-Oakland Golden Grizzlies,2.6,127
-Georgia Tech Yellow Jackets,2.6,128
-California Golden Bears,2.5,129
-Michigan Wolverines,2.4,130
-Belmont Bruins,2.2,131
-Western Carolina Catamounts,2.1,132
-Youngstown State Penguins,2.1,133
-Notre Dame Fighting Irish,2.1,134
-Missouri Tigers,2.0,135
-Davidson Wildcats,2.0,136
-UC San Diego Tritons,1.9,137
-Arkansas State Red Wolves,1.8,138
-Tulane Green Wave,1.8,139
-Eastern Washington Eagles,1.7,140
-Purdue Fort Wayne Mastodons,1.6,141
-Arizona State Sun Devils,1.5,142
-St. Thomas-Minnesota Tommies,1.5,143
-UNC Greensboro Spartans,1.5,144
-UT Arlington Mavericks,1.4,145
-Wichita State Shockers,1.4,146
-Chattanooga Mocs,1.4,147
-UNC Asheville Bulldogs,1.3,148
-Winthrop Eagles,1.1,149
-West Virginia Mountaineers,1.1,150
-South Dakota State Jackrabbits,1.0,151
-Longwood Lancers,1.0,152
-Tarleton State Texans,0.9,153
-Lipscomb Bisons,0.9,154
-Kent State Golden Flashes,0.9,155
-Delaware Blue Hens,0.9,156
-Wright State Raiders,0.7,157
-Quinnipiac Bobcats,0.6,158
-Western Kentucky Hilltoppers,0.6,159
-Sam Houston Bearkats,0.6,160
-Louisiana Ragin' Cajuns,0.6,161
-Missouri State Bears,0.5,162
-Bryant Bulldogs,0.4,163
-Fairfield Stags,0.2,164
-Stony Brook Seawolves,0.2,165
-Weber State Wildcats,0.1,166
-Murray State Racers,0.1,167
-Furman Paladins,-0.2,168
-Stephen F. Austin Lumberjacks,-0.3,169
-Pennsylvania Quakers,-0.4,170
-Long Beach State Beach,-0.6,171
-Texas A&M-Corpus Christi Islanders,-0.7,172
-Oregon State Beavers,-0.8,173
-Brown Bears,-0.8,174
-La Salle Explorers,-0.9,175
-Fordham Rams,-1.1,176
-Eastern Kentucky Colonels,-1.2,177
-Cleveland State Vikings,-1.2,178
-Little Rock Trojans,-1.2,179
-Columbia Lions,-1.3,180
-East Carolina Pirates,-1.3,181
-Norfolk State Spartans,-1.3,182
-Temple Owls,-1.4,183
-Stetson Hatters,-1.4,184
-Texas State Bobcats,-1.4,185
-Loyola Marymount Lions,-1.4,186
-UTEP Miners,-1.4,187
-East Tennessee State Buccaneers,-1.5,188
-Iona Gaels,-1.5,189
-Monmouth Hawks,-1.5,190
-New Hampshire Wildcats,-1.6,191
-Vanderbilt Commodores,-1.6,192
-UC Davis Aggies,-1.6,193
-Georgetown Hoyas,-1.7,194
-Hawai'i Rainbow Warriors,-1.7,195
-Georgia State Panthers,-1.7,196
-Marist Red Foxes,-1.7,197
-UIC Flames,-1.8,198
-Maine Black Bears,-1.8,199
-Tulsa Golden Hurricane,-1.8,200
-Jacksonville State Gamecocks,-1.8,201
-Gardner-Webb Runnin' Bulldogs,-1.9,202
-Northern Kentucky Norse,-2.1,203
-Illinois State Redbirds,-2.1,204
-Montana Grizzlies,-2.1,205
-Saint Louis Billikens,-2.2,206
-Saint Peter's Peacocks,-2.2,207
-Radford Highlanders,-2.3,208
-Merrimack Warriors,-2.3,209
-Harvard Crimson,-2.4,210
-Austin Peay Governors,-2.4,211
-Louisville Cardinals,-2.5,212
-UAlbany Great Danes,-2.5,213
-Rider Broncs,-2.6,214
-Rice Owls,-2.6,215
-North Carolina Central Eagles,-2.7,216
-North Florida Ospreys,-2.7,217
-George Washington Revolutionaries,-2.8,218
-Bowling Green Falcons,-2.8,219
-Rhode Island Rams,-2.9,220
-Wofford Terriers,-2.9,221
-Lamar Cardinals,-3.0,222
-Utah Valley Wolverines,-3.1,223
-Mount St. Mary's Mountaineers,-3.1,224
-Kansas City Roos,-3.1,225
-Marshall Thundering Herd,-3.1,226
-North Alabama Lions,-3.2,227
-Abilene Christian Wildcats,-3.2,228
-UC Santa Barbara Gauchos,-3.2,229
-Northeastern Huskies,-3.2,230
-Evansville Purple Aces,-3.3,231
-Central Connecticut Blue Devils,-3.3,232
-California Baptist Lancers,-3.3,233
-North Dakota Fighting Hawks,-3.4,234
-Kennesaw State Owls,-3.4,235
-Florida Gulf Coast Eagles,-3.4,236
-Cal State Fullerton Titans,-3.5,237
-Milwaukee Panthers,-3.6,238
-Ball State Cardinals,-3.6,239
-UT Martin Skyhawks,-3.7,240
-Lehigh Mountain Hawks,-3.7,241
-San José State Spartans,-3.7,242
-Binghamton Bearcats,-3.7,243
-Miami (OH) RedHawks,-3.8,244
-Pepperdine Waves,-3.9,245
-Fresno State Bulldogs,-4.0,246
-Queens University Royals,-4.0,247
-Cal State Northridge Matadors,-4.1,248
-UC Riverside Highlanders,-4.2,249
-Southern Jaguars,-4.2,250
-Niagara Purple Eagles,-4.2,251
-Southern Miss Golden Eagles,-4.3,252
-Portland State Vikings,-4.4,253
-Northern Colorado Bears,-4.5,254
-UMBC Retrievers,-4.6,255
-Green Bay Phoenix,-4.6,256
-UTSA Roadrunners,-4.7,257
-Nicholls Colonels,-4.7,258
-Mercer Bears,-4.8,259
-Cal State Bakersfield Roadrunners,-4.8,260
-Wyoming Cowboys,-4.8,261
-Presbyterian Blue Hose,-4.8,262
-Howard Bison,-4.8,263
-Canisius Golden Griffins,-4.9,264
-North Dakota State Bison,-4.9,265
-Florida International Panthers,-5.0,266
-Bucknell Bison,-5.0,267
-Texas Southern Tigers,-5.0,268
-Sacred Heart Pioneers,-5.0,269
-Western Illinois Leathernecks,-5.1,270
-American University Eagles,-5.1,271
-Jacksonville Dolphins,-5.1,272
-Wagner Seahawks,-5.5,273
-Oral Roberts Golden Eagles,-5.5,274
-Georgia Southern Eagles,-5.5,275
-Middle Tennessee Blue Raiders,-5.6,276
-SIU Edwardsville Cougars,-5.7,277
-The Citadel Bulldogs,-5.8,278
-South Alabama Jaguars,-5.8,279
-South Carolina Upstate Spartans,-5.9,280
-Omaha Mavericks,-5.9,281
-Boston University Terriers,-6.0,282
-Old Dominion Monarchs,-6.0,283
-Le Moyne Dolphins,-6.1,284
-Montana State Bobcats,-6.1,285
-Central Michigan Chippewas,-6.1,286
-Idaho State Bengals,-6.3,287
-Delaware State Hornets,-6.3,288
-Tennessee State Tigers,-6.3,289
-Chicago State Cougars,-6.3,290
-Grambling Tigers,-6.4,291
-Northern Illinois Huskies,-6.6,292
-Jackson State Tigers,-6.6,293
-Navy Midshipmen,-6.7,294
-Robert Morris Colonials,-6.7,295
-SE Louisiana Lions,-7.0,296
-Western Michigan Broncos,-7.0,297
-Campbell Fighting Camels,-7.1,298
-Sacramento State Hornets,-7.1,299
-Elon Phoenix,-7.1,300
-William & Mary Tribe,-7.1,301
-Eastern Illinois Panthers,-7.1,302
-Bethune-Cookman Wildcats,-7.2,303
-San Diego Toreros,-7.3,304
-New Mexico State Aggies,-7.3,305
-Utah Tech Trailblazers,-7.4,306
-Bellarmine Knights,-7.5,307
-Southern Utah Thunderbirds,-7.6,308
-DePaul Blue Demons,-7.6,309
-UL Monroe Warhawks,-7.6,310
-Lafayette Leopards,-7.7,311
-Coastal Carolina Chanticleers,-7.7,312
-Fairleigh Dickinson Knights,-7.9,313
-Alcorn State Braves,-8.1,314
-Valparaiso Beacons,-8.1,315
-South Carolina State Bulldogs,-8.2,316
-Denver Pioneers,-8.3,317
-Alabama State Hornets,-8.3,318
-Charleston Southern Buccaneers,-8.5,319
-Portland Pilots,-8.6,320
-South Dakota Coyotes,-9.1,321
-Arkansas-Pine Bluff Golden Lions,-9.2,322
-NJIT Highlanders,-9.4,323
-Hampton Pirates,-9.4,324
-Texas A&M-Commerce Lions,-9.5,325
-Idaho Vandals,-9.6,326
-Morgan State Bears,-9.7,327
-Air Force Falcons,-9.8,328
-Army Black Knights,-10.0,329
-Prairie View A&M Panthers,-10.2,330
-Northwestern State Demons,-10.2,331
-Alabama A&M Bulldogs,-10.3,332
-Eastern Michigan Eagles,-10.4,333
-Southern Indiana Screaming Eagles,-10.5,334
-Central Arkansas Bears,-10.5,335
-UT Rio Grande Valley Vaqueros,-10.5,336
-Dartmouth Big Green,-10.7,337
-Manhattan Jaspers,-10.9,338
-New Orleans Privateers,-11.1,339
-Loyola Maryland Greyhounds,-11.3,340
-Incarnate Word Cardinals,-11.6,341
-Tennessee Tech Golden Eagles,-11.7,342
-Maryland Eastern Shore Hawks,-11.9,343
-Buffalo Bulls,-12.1,344
-North Carolina A&T Aggies,-12.1,345
-Holy Cross Crusaders,-12.3,346
-Long Island University Sharks,-12.3,347
-Northern Arizona Lumberjacks,-12.5,348
-Cal Poly Mustangs,-12.9,349
-Florida A&M Rattlers,-13.1,350
-Southeast Missouri State Redhawks,-13.3,351
-Detroit Mercy Titans,-13.4,352
-St. Francis (PA) Red Flash,-13.6,353
-Stonehill Skyhawks,-14.0,354
-Lindenwood Lions,-14.0,355
-Houston Christian Huskies,-14.3,356
-Siena Saints,-15.0,357
-VMI Keydets,-15.4,358
-Coppin State Eagles,-16.5,359
-Pacific Tigers,-16.7,360
-IU Indianapolis Jaguars,-18.3,361
-Mississippi Valley State Delta Devils,-21.9,362
+Houston,22.6,1
+Kansas,17.8,10
+Charleston,5.1,100
+DePaul,5.1,101
+Braves,5.0,102
+Wichita State,5.0,103
+Temple,5.0,104
+Saint Joseph's,4.8,105
+Virginia Tech,4.8,106
+Illinois-Chicago,4.5,107
+UCSB,4.4,108
+Saint Louis,4.3,109
+Alabama,17.7,11
+Oklahoma State,4.3,110
+La Salle,4.2,111
+Liberty,4.2,112
+James Madison,4.1,113
+UC Irvine,4.0,114
+Boston College,4.0,115
+UAB,3.7,116
+South Florida,3.7,117
+Oregon State,3.6,118
+Fort Wayne,3.5,119
+Iowa State,17.4,12
+Samford,3.2,120
+Santa Clara,3.1,121
+Massachusetts,3.0,122
+St. Bonaventure,2.9,123
+Louisiana Tech,2.6,124
+Sam Houston State,2.5,125
+UMKC,2.5,126
+Charlotte,2.4,127
+UNC Greensboro,2.3,128
+Rhode Island,2.1,129
+Kentucky,17.2,13
+Troy,2.0,130
+Illinois State,1.9,131
+Toledo,1.8,132
+Ohio,1.7,133
+UNCW,1.7,134
+Kent State,1.7,135
+Northeastern,1.6,136
+Towson,1.5,137
+Georgetown,1.3,138
+George Washington,0.9,139
+Cincinnati,16.6,14
+Rice,0.9,140
+Northern Iowa,0.8,141
+Seattle,0.8,142
+Hofstra,0.8,143
+Jacksonville State,0.6,144
+Tulane,0.6,145
+Davidson,0.5,146
+Drake,0.4,147
+Duquesne,0.4,148
+Richmond,0.2,149
+Texas,16.3,15
+Montana State,0.2,150
+Northern Colorado,0.2,151
+Vermont,-0.1,152
+Cal State Northridge,-0.1,153
+Weber State,-0.2,154
+Lipscomb,-0.2,155
+Texas A&M-CC,-0.3,156
+Southern Illinois,-0.5,157
+Furman,-0.5,158
+Cornell,-0.6,159
+Creighton,16.2,16
+East Carolina,-0.7,160
+UMass Lowell,-0.7,161
+Indiana State,-0.8,162
+Milwaukee,-0.8,163
+Loyola Marymount,-0.8,164
+Western Kentucky,-0.8,165
+UTRGV,-0.9,166
+Wright State,-1.0,167
+Fordham,-1.0,168
+Drexel,-1.1,169
+Marquette,15.9,17
+UCSD,-1.1,170
+Florida Gulf Coast,-1.2,171
+Norfolk State,-1.2,172
+Akron,-1.2,173
+UNC Asheville,-1.3,174
+Miami OH,-1.3,175
+Winthrop,-1.3,176
+Tulsa,-1.4,177
+Texas State,-1.4,178
+St. Thomas,-1.4,179
+Texas Tech,15.6,18
+South Dakota State,-1.4,180
+Middle Tennessee State,-1.5,181
+UT Arlington,-1.6,182
+Columbia,-1.7,183
+Nicholls State,-1.8,184
+California Baptist,-2.0,185
+Saint Peter's,-2.0,186
+Chattanooga,-2.0,187
+Appalachian State,-2.1,188
+Youngstown State,-2.1,189
+Illinois,15.2,19
+Missouri State,-2.1,190
+Brown,-2.2,191
+Northern Kentucky,-2.2,192
+Central Michigan,-2.4,193
+Bryant,-2.5,194
+Montana,-2.6,195
+Hawaii,-2.7,196
+Maine,-2.7,197
+Georgia State,-2.7,198
+North Florida,-2.8,199
+Duke,22.2,2
+Purdue,14.9,20
+Quinnipiac,-2.8,200
+Green Bay,-2.9,201
+Ball State,-3.0,202
+Mercer,-3.0,203
+CCSU,-3.0,204
+Wyoming,-3.0,205
+ETSU,-3.1,206
+Belmont,-3.1,207
+Longwood,-3.1,208
+Kennesaw State,-3.1,209
+Texas A&M,14.7,21
+UC Davis,-3.1,210
+Marshall,-3.2,211
+Colgate,-3.2,212
+San Jose State,-3.2,213
+Wofford,-3.3,214
+Cal State Bakersfield,-3.3,215
+Merrimack,-3.3,216
+New Mexico State,-3.3,217
+William & Mary,-3.3,218
+Campbell,-3.4,219
+Pittsburgh,14.6,22
+Bucknell,-3.4,220
+Utah Valley,-3.5,221
+Albany,-3.7,222
+Valparaiso,-3.7,223
+Stephen F. Austin,-3.8,224
+Gardner-Webb,-3.9,225
+Fairfield,-3.9,226
+Monmouth,-4.0,227
+Southern Mississippi,-4.0,228
+Oakland,-4.0,229
+Maryland,14.1,23
+Georgia Southern,-4.0,230
+Iona,-4.1,231
+Bowling Green,-4.2,232
+North Carolina Central,-4.2,233
+North Dakota State,-4.2,234
+Harvard,-4.2,235
+Louisiana,-4.2,236
+Cleveland State,-4.3,237
+North Alabama,-4.3,238
+Southern,-4.4,239
+Ohio State,14.1,24
+UC Riverside,-4.5,240
+UTEP,-4.5,241
+South Alabama,-4.5,242
+Delaware,-4.5,243
+American University,-4.6,244
+UTSA,-4.6,245
+Presbyterian Blue Hose,-4.7,246
+Texas Southern,-4.7,247
+Boston University,-4.9,248
+Morehead State,-4.9,249
+St. John's,13.9,25
+Austin Peay,-4.9,250
+Eastern Kentucky,-5.0,251
+Marist,-5.0,252
+Abilene Christian,-5.1,253
+Southern Utah,-5.1,254
+Bethune-Cookman,-5.1,255
+Howard,-5.1,256
+Northern Arizona,-5.2,257
+Radford,-5.2,258
+Oral Roberts,-5.2,259
+BYU,13.7,26
+Little Rock,-5.4,260
+Grambling State,-5.5,261
+South Carolina State,-5.5,262
+North Carolina A&T,-5.6,263
+Incarnate Word,-5.6,264
+Stony Brook,-5.6,265
+Jacksonville,-5.6,266
+Pepperdine,-5.7,267
+Lamar,-5.7,268
+Rider,-5.7,269
+Michigan State,13.7,27
+Mount St. Mary's,-5.8,270
+Army,-5.9,271
+Long Beach State,-6.0,272
+Hampton,-6.1,273
+Wagner,-6.1,274
+SIUE,-6.1,275
+Portland State,-6.2,276
+Elon,-6.2,277
+Omaha,-6.2,278
+SELA,-6.2,279
+Mississippi State,13.6,28
+Alabama State,-6.2,280
+Lehigh,-6.2,281
+Penn,-6.3,282
+Lafayette,-6.5,283
+Fresno State,-6.5,284
+Northern Illinois,-6.6,285
+Idaho State,-6.6,286
+North Dakota,-6.7,287
+Charleston Southern,-6.8,288
+Robert Morris,-6.8,289
+UCLA,13.6,29
+Northwestern State,-6.8,290
+Florida International,-6.9,291
+Air Force,-7.0,292
+Tennessee State,-7.1,293
+Western Carolina,-7.2,294
+Louisiana-Monroe,-7.3,295
+Niagara,-7.4,296
+Eastern Michigan,-7.5,297
+Queens,-7.6,298
+South Dakota,-7.6,299
+Auburn,20.1,3
+Wisconsin,13.1,30
+UMBC,-7.6,300
+Dartmouth,-7.6,301
+Holy Cross,-7.7,302
+Cal Poly,-7.8,303
+Sacramento State,-7.8,304
+Navy,-7.9,305
+Idaho,-7.9,306
+Eastern Illinois,-8.0,307
+Eastern Washington,-8.2,308
+Portland,-8.2,309
+Nevada,12.8,31
+Loyola-MD,-8.3,310
+Cal State Fullerton,-8.4,311
+USC Upstate,-8.5,312
+Pacific,-8.6,313
+Tarleton State,-8.6,314
+San Diego,-8.7,315
+Southern Indiana,-8.9,316
+UT Martin,-8.9,317
+Old Dominion,-9.0,318
+Sacred Heart,-9.3,319
+Florida,12.8,32
+Coastal Carolina,-9.4,320
+Western Illinois,-9.6,321
+West Georgia,-9.7,322
+Evansville,-9.9,323
+Long Island,-10.0,324
+Denver,-10.1,325
+Western Michigan,-10.2,326
+SEMO,-10.3,327
+Le Moyne,-10.3,328
+Citadel,-10.5,329
+Miami FL,12.7,33
+Binghamton,-10.5,330
+Fairleigh Dickinson,-10.6,331
+Tennessee Tech,-10.6,332
+Manhattan,-10.8,333
+Jackson State,-10.9,334
+St. Francis,-11.0,335
+Stetson,-11.0,336
+Bellarmine,-11.0,337
+New Hampshire,-11.1,338
+Utah Tech,-11.1,339
+Utah,12.7,34
+Central Arkansas,-11.3,340
+Siena,-11.6,341
+Delaware State,-11.6,342
+Alabama A&M,-11.8,343
+Texas A&M Commerce,-12.0,344
+Chicago State,-12.2,345
+Mercyhurst,-12.3,346
+Detroit-Mercy,-12.5,347
+Morgan State,-12.5,348
+Stonehill,-12.6,349
+Memphis,12.5,35
+Lindenwood,-12.8,350
+UMES,-12.9,351
+New Orleans,-13.1,352
+Houston Christian,-13.3,353
+Canisius,-13.6,354
+Prairie View,-13.6,355
+VMI,-14.2,356
+Florida A&M,-14.3,357
+IUPUI,-14.4,358
+Buffalo,-14.7,359
+Michigan,12.4,36
+NJIT,-14.8,360
+Alcorn State,-15.2,361
+Arkansas-Pine Bluff,-15.6,362
+Coppin State,-16.2,363
+Mississippi Valley State,-21.9,364
+Utah State,12.4,37
+Clemson,12.2,38
+Indiana,12.0,39
+Tennessee,19.4,4
+Oregon,11.9,40
+Oklahoma,11.8,41
+Ole Miss,11.4,42
+Nebraska,11.4,43
+Penn State,11.4,44
+TCU,11.3,45
+Saint Mary's,11.3,46
+Arkansas,11.1,47
+Georgia,11.0,48
+Northwestern,11.0,49
+UConn,19.0,5
+NC State,10.9,50
+VCU,10.7,51
+Boise State,10.7,52
+SMU,10.6,53
+Iowa,10.5,54
+LSU,10.4,55
+San Francisco,9.9,56
+New Mexico,9.9,57
+Villanova,9.9,58
+Xavier,9.7,59
+North Carolina,18.8,6
+Rutgers,9.6,60
+USC,9.4,61
+Louisville,9.3,62
+UCF,9.3,63
+Missouri,9.2,64
+Notre Dame,8.8,65
+San Diego State,8.7,66
+Providence,8.7,67
+Arizona State,8.3,68
+South Carolina,8.3,69
+Gonzaga,18.5,7
+Butler Bulldogs,8.2,70
+Florida Atlantic,8.2,71
+McNeese State,8.0,72
+Wake Forest,8.0,73
+Washington,8.0,74
+Murray State,7.9,75
+Grand Canyon,7.8,76
+Syracuse,7.8,77
+Kansas State,7.7,78
+Princeton,7.6,79
+Baylor,18.1,8
+George Mason,7.6,80
+UNLV,7.5,81
+Washington State,7.4,82
+Dayton,7.4,83
+Minnesota,7.3,84
+West Virginia,7.3,85
+Colorado State,7.1,86
+Virginia,7.1,87
+Colorado,7.0,88
+Stanford,6.7,89
+Arizona,17.9,9
+Vanderbilt,6.7,90
+North Texas,6.5,91
+Florida State,6.3,92
+Seton Hall,6.3,93
+Arkansas State,6.1,94
+High Point,6.0,95
+Loyola Chicago,5.9,96
+Yale,5.9,97
+California,5.3,98
+Georgia Tech,5.2,99
